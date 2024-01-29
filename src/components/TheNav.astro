@@ -1,12 +1,17 @@
 ---
-// import { ViewTransitions } from 'astro:transitions'
+// import { ViewTransitions } from 'astro:transitions''
+import { Image } from 'astro:assets';
+import paymentusLogo from "../assets/images/logos/paymentus-logo.svg";
+
 ---
 
 <header>
 	<nav class="navbar navbar-expand-lg bg-midnight-blue text-light fixed-top p-3">
 		<div class="container-fluid">
 		<a class="navbar-brand" href="/">
-        <img style="height: auto; width: 100px;" src="/src/assets/images/logos/paymentus-logo.svg" alt=""></a>
+        <!-- <img style="height: auto; width: 100px;" src="../../assets/images/logos/paymentus-logo.svg" alt=""> -->
+        <Image style="height: auto; width: 100px;" class="" src={paymentusLogo} alt=""/>
+    </a>
 		  <button class="navbar-toggler text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <i class="bi bi-justify fs-2"></i>
 			<!-- <span class="navbar-toggler-icon"></span> -->
