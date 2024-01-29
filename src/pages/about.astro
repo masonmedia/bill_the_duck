@@ -1,0 +1,256 @@
+---
+
+import Layout from '../layouts/MainLayout.astro';
+import ButtonPlus from '../components/ButtonPlus.astro';
+import data from '../data/bill.json';
+---
+
+<Layout title="Paymentus 20th Anniversary Home" description="Big time.">
+		<main>
+			<div class="container-fluid px-0 m-0 mt-5 pt-3" style="background: url('../assets/images/backgrounds/hero-blur.svg'); background-size: cover">
+
+				<!-- row cols layout 2 -->
+
+					<div class="row row-cols-2 row-cols-lg-4">
+						<div class="col p-3 bg-warning min-vh-50" style="background: url('https://images.unsplash.com/photo-1582845512747-e42001c95638?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center; background-size: cover; filter: grayscale(1);">
+						</div>
+						<div class="col d-flex flex-column justify-content-center align-items-start text-start p-4 min-vh-50 bg-midnight-blue text-light">
+							<div class="p-5 w-100 h-100 bg-electric-blue rounded-5">
+								<span class="badge text-bg-light">Welcome</span>
+							  <h1 class="fs-1 lh-1 fw-900 my-3 lh-1">Cheers to 20 years!</h1>
+							  <p class="small">In 2004, an idea was hatched: simplify bill payments for the millions of bill payers throughout North America.</p>
+							  <ButtonPlus plus_button_link="/" plus_button_color="#ffffff" />
+							</div>
+						</div>
+						<div class="col d-flex flex-column justify-content-center align-items-start text-start p-4 min-vh-25 bg-sky-blue">
+							<div class="p-5 w-100 h-100 bg-light rounded-5 shadow">
+								<span class="badge text-bg-primary shadow">The Bill Bio</span>
+								<h1 class="my-2 fw-900 lh-1">Meet Bill</h1>
+								<p>His mission is simple: help organizations of all shapes and sizes Bill Better®.</p>
+								<ButtonPlus plus_button_link="/" plus_button_color="#222222" />
+							</div>
+						</div>
+						<div class="col d-flex flex-column justify-content-center align-items-start text-start p-4 min-vh-50" style="background: url('https://images.unsplash.com/photo-1624128165182-c665af0d224e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center; background-size: cover; filter: grayscale(1);">
+							<div class="p-5 w-100 h-100 bg-light rounded-5 shadow">
+								<span class="badge text-bg-dark border shadow">#1</span>
+								<h2 class="fw-900 my-2 lh-1">The Journey to Becoming Best-in-Class</h2>
+								<p>Join us in celebrating the milestones of our past.</p>
+								<ButtonPlus plus_button_link="/" plus_button_color="#222222" />
+							</div>
+						</div>
+						  <div class="col d-flex flex-column justify-content-center align-items-start text-start p-4 min-vh-25 bg-purple">
+							<div class="p-5 w-100 h-100 bg-light rounded-5 shadow">
+								<span class="badge text-bg-light border shadow">Let's Celebrate</span>
+								<h1 class="my-2 fw-900 lh-1">Join the Billebration</h1>
+								<p class="small">Paymentus CEO Dushyant Sharma shares his thoughts on the past 20 years and his vision for the future. </p>
+								<ButtonPlus plus_button_link="/" plus_button_color="#222222" />
+							</div>
+						</div>
+						<div class="col d-flex flex-column justify-content-center align-items-start text-start p-4 min-vh-50" style="background: url('https://images.unsplash.com/photo-1647496849039-ee5a9f8ba569?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center; background-size: cover; filter: grayscale(1);">
+							<div class="p-5 w-100 h-100 bg-light rounded-5 shadow">
+								<span class="badge text-bg-secondary border shadow">Let's Celebrate</span>
+								<h1 class="my-2 fw-900 lh-1">What Bill Means to Us</h1>
+								<p class="small fs-italic">“Bill reminds us that, while the work we do is very serious, we can always have fun. We can deliver for our clients and keep a smile on our face.” </p>
+								<ButtonPlus plus_button_link="/" plus_button_color="#222222" />
+							</div>
+						</div>
+
+						<div class="col d-flex flex-column justify-content-center align-items-start text-start p-4 min-vh-25 bg-green">
+							<div class="p-5 w-100 h-100 bg-light rounded-5 shadow">
+								<span class="badge text-bg-success border shadow">FAQ</span>
+								<h1 class="my-2 fw-900 lh-1">Ask Bill</h1>
+								<p class="small">Have a question? Send us an email with a question or topic for a future Bill Better® article and if we use it, you’ll get a special prize.</p>
+								<ButtonPlus plus_button_link="/" plus_button_color="#222222" />
+							</div>
+						</div>
+
+						<div class="col d-flex flex-column justify-content-center align-items-start text-start p-4 min-vh-25 bg-electric-blue">
+							<div class="p-5 w-100 h-100 bg-light rounded-5 shadow">
+								<span class="badge text-bg-primary border shadow">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+										<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+									  </svg>
+								</span>
+								<h1 class="my-2 fw-900 lh-1">Follow the Adventure</h1>
+								<p class="small">Follow Bill’s adventures around the world by connecting with us on Instagram.</p>
+								<ButtonPlus plus_button_link="/" plus_button_color="#222222" />
+							</div>
+						</div>
+					  </div>
+
+					  <!-- alt grid layout -->
+
+					  <div class="row">
+						<div class="col-lg-3 p-0">
+							<div class="p-4 w-100 h-100 bg-logo-blue">
+							<ul class="nav nav-pills flex-column h-100 p-4 border border-primary rounded-4 text-light">
+								<li class="nav-item fw-900 d-flex align-items-center">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+										<path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
+									  </svg>
+								  <a class="nav-link" aria-current="page" href="#">Paymentus</a>
+								</li>
+								<li class="nav-item fw-900">
+									<a class="nav-link" aria-current="page" href="#">Home</a>
+								  </li>
+								  <li class="nav-item fw-900">
+									<a class="nav-link" aria-current="page" href="#">Meet Bill</a>
+								  </li>
+								<li class="nav-item fw-900">
+								  <a class="nav-link" href="#">The Journey</a>
+								</li>
+								<li class="nav-item fw-900">
+								  <a class="nav-link disabled">Billebration</a>
+								</li>
+								<li class="nav-item fw-900">
+								  <a class="nav-link">Bill's meaning</a>
+								  </li>
+								<li class="nav-item fw-900">
+								  <a class="nav-link">Ask Bill</a>
+								</li>
+								<li class="nav-item fw-900">
+								  <a class="nav-link">Follow Bill</a>
+								</li>
+							  </ul>
+							  </div>
+						</div>
+						<div class="col-lg-9">
+							<div class="row row-cols-2 row-cols-lg-3">
+								<div class="col p-3 bg-warning min-vh-50" style="background: url('https://images.unsplash.com/photo-1582845512747-e42001c95638?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center; background-size: cover; filter: grayscale(1);">
+								</div>
+								<div class="col d-flex flex-column justify-content-center align-items-start text-start p-4 min-vh-50 bg-midnight-blue text-light">
+									<div class="p-5 w-100 h-100 bg-electric-blue rounded-5">
+										<span class="badge text-bg-light">Welcome</span>
+									  <h1 class="fs-1 lh-1 fw-900 my-3 lh-1">Cheers to 20 years!</h1>
+									  <p class="small">In 2004, an idea was hatched: simplify bill payments for the millions of bill payers throughout North America.</p>
+									  <ButtonPlus plus_button_link="/" plus_button_color="#ffffff" />
+									</div>
+								</div>
+								<div class="col d-flex flex-column justify-content-center align-items-start text-start p-4 min-vh-25 bg-sky-blue">
+									<div class="p-5 w-100 h-100 bg-light rounded-5 shadow">
+										<span class="badge text-bg-primary shadow">The Bill Bio</span>
+										<h1 class="my-2 fw-900 lh-1">Meet Bill</h1>
+										<p>His mission is simple: help organizations of all shapes and sizes Bill Better®.</p>
+										<ButtonPlus plus_button_link="/" plus_button_color="#222222" />
+									</div>
+								</div>
+								<div class="col d-flex flex-column justify-content-center align-items-start text-start p-4 min-vh-50" style="background: url('https://images.unsplash.com/photo-1624128165182-c665af0d224e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center; background-size: cover; filter: grayscale(1);">
+									<div class="p-5 w-100 h-100 bg-light rounded-5 shadow">
+										<span class="badge text-bg-dark border shadow">#1</span>
+										<h2 class="fw-900 my-2 lh-1">The Journey to Becoming Best-in-Class</h2>
+										<p>Join us in celebrating the milestones of our past.</p>
+										<ButtonPlus plus_button_link="/" plus_button_color="#222222" />
+									</div>
+								</div>
+								  <div class="col d-flex flex-column justify-content-center align-items-start text-start p-4 min-vh-25 bg-purple">
+									<div class="p-5 w-100 h-100 bg-light rounded-5 shadow">
+										<span class="badge text-bg-light border shadow">Let's Celebrate</span>
+										<h1 class="my-2 fw-900 lh-1">Join the Billebration</h1>
+										<p class="small">Paymentus CEO Dushyant Sharma shares his thoughts on the past 20 years and his vision for the future. </p>
+										<ButtonPlus plus_button_link="/" plus_button_color="#222222" />
+									</div>
+								</div>
+								<div class="col d-flex flex-column justify-content-center align-items-start text-start p-4 min-vh-50" style="background: url('https://images.unsplash.com/photo-1647496849039-ee5a9f8ba569?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center; background-size: cover; filter: grayscale(1);">
+									<div class="p-5 w-100 h-100 bg-light rounded-5 shadow">
+										<span class="badge text-bg-secondary border shadow">Let's Celebrate</span>
+										<h1 class="my-2 fw-900 lh-1">What Bill Means to Us</h1>
+										<p class="small fs-italic">“Bill reminds us that, while the work we do is very serious, we can always have fun. We can deliver for our clients and keep a smile on our face.” </p>
+										<ButtonPlus plus_button_link="/" plus_button_color="#222222" />
+									</div>
+								</div>
+		
+								<div class="col d-flex flex-column justify-content-center align-items-start text-start p-4 min-vh-25 bg-green">
+									<div class="p-5 w-100 h-100 bg-light rounded-5 shadow">
+										<span class="badge text-bg-success border shadow">FAQ</span>
+										<h1 class="my-2 fw-900 lh-1">Ask Bill</h1>
+										<p class="small">Have a question? Send us an email with a question or topic for a future Bill Better® article and if we use it, you’ll get a special prize.</p>
+										<ButtonPlus plus_button_link="/" plus_button_color="#222222" />
+									</div>
+								</div>
+		
+								<div class="col d-flex flex-column justify-content-center align-items-start text-start p-4 min-vh-25 bg-electric-blue">
+									<div class="p-5 w-100 h-100 bg-light rounded-5 shadow">
+										<span class="badge text-bg-primary border shadow">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+												<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+											  </svg>
+										</span>
+										<h1 class="my-2 fw-900 lh-1">Follow the Adventure</h1>
+										<p class="small">Follow Bill’s adventures around the world by connecting with us on Instagram.</p>
+										<ButtonPlus plus_button_link="/" plus_button_color="#222222" />
+									</div>
+								</div>
+							  </div>
+						</div>
+					  </div>
+
+					
+
+				<div class="row mx-0 min-vh-100 relative">
+					<div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center p-5">
+						<!-- <h2 class="position-absolute top-50 start-50 translate-middle z-0 fw-900" style="font-size: 100vmin; opacity: .1;">20</h2> -->
+						<h1 class="fw-900 text-uppercase" style="font-size: 13vmin">Cheers to 20 Years!</h1>
+						<p class="fs-4">In 2004, an idea was hatched: simplify bill payments for the millions of bill payers throughout North America. To celebrate this idea, Paymentus welcomed someone who knows a thing or two about bills – Bill the Duck. </p>
+					</div>
+				</div>
+				
+				<div class="row mx-0 min-vh-100 bg-light">
+					<div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-start p-5">
+						<h4>Paymentus</h4>
+						<h1 class="lh-1 fw-light my-3" style="font-size: 12vmin">Cheers to 20 Years</h1>
+						<p class="fs-4">In 2004, an idea was hatched: simplify bill payments for the millions of bill payers throughout North America. To celebrate this idea, Paymentus welcomed someone who knows a thing or two about bills – Bill the Duck. </p>
+						<div class="d-flex">
+							<button class="btn btn-outline-dark">About Bill</button>
+							<button class="btn btn-dark"></button>
+						</div>
+						
+					</div>
+					<div class="col-lg-6 d-flex flex-column justify-content-center align-items-center text-center p-5">
+						<img class="w-100 h-100 rounded-5" style="object-fit: cover" src="https://images.unsplash.com/photo-1582845512747-e42001c95638?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+					</div>
+				</div>
+
+				<div class="row min-vh-100">
+					<div class="col-lg-12 p-0">
+						<img class="w-100" src="https://images.unsplash.com/photo-1582845512747-e42001c95638?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+					</div>
+				</div>
+
+				<div class="row mx-0 min-vh-100 relative bg-black text-light">
+					<div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center p-5">
+						<h1 class="fs-1 fw-light text-uppercase" style="font-size: 13vmin">For two decades, Bill has helped our clients keep their customer service afloat, get their ducks in a row and best serve those who have bills. Today, we’re excited to celebrate Bill and all those who have flown with us over these last 20 years. Here’s to greater successes to come!</h1>
+					</div>
+				</div>
+				<div class="row mx-0 min-vh-100">
+					<div class="col-lg-12 d-flex flex-column justify-content-center align-items-center text-start p-5">
+						<h2 class="display-4 fw-light">
+							You’ve seen him at trade shows, on Instagram and maybe even on a pair of shoes or two. His mission is simple: help organizations of all shapes and sizes Bill Better®. Get to know our fine-feathered friend and learn more about his dedication to making life easy for everyone – and everything – who has bills.</h2>
+					</div>
+				</div>
+				
+				<div class="row mx-0 min-vh-100">
+					<div class="col-lg-6">
+						<h1>Bill Duck: Key stats</h1>
+					</div>
+					<div class="col-lg-6">
+						<div class="row">
+							{
+								data.bill_bio.map((item) => (
+								<div class="col-lg-6">
+									<div class="d-flex flex-column justify-content-center align-items-start text-start alert alert-primary mt-1 mr-1" role="alert">
+									<h4>{item.title}</h4>
+									<p>{item.content}</p>
+									</div>
+								</div>
+								))
+							  }
+						</div>
+					  </div>
+<!-- 
+Hobbies: Collecting trade show swag; traveling to exotic locations; taking bubble baths; changing colors; helping billers Bill Better!  -->
+
+				</div>
+			</div>
+		</main>
+	</Layout>
+

@@ -1,0 +1,74 @@
+.bg-midnight-blue {
+    background: #061E51;
+}
+.bg-sky-blue {
+    background: #56C3FF;
+}
+.bg-electric-blue {
+    background: #2364F6;
+}
+.bg-logo-blue {
+    background: #224B9A;
+}
+.bg-ice-blue {
+    background: #DCF1FF;
+}
+.bg-green {
+    background: #05B487;
+}
+.bg-magenta {
+    background: #AA206D;
+}
+.bg-purple {
+    background: #7B53F5;
+}
+.bg-purple-dark {
+    background: #39266D;
+}
+
+.bg-light-grey {
+    background: #EFEFEF;
+}
+
+.bg-silver {
+    background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #757F9A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* text */
+
+.text-midnight-blue {
+    color: #061E51;
+}
+.text-sky-blue {
+    color: #56C3FF;
+}
+.text-electric-blue {
+    color: #2364F6;
+}
+.text-logo-blue {
+    color: #224B9A;
+}
+.text-ice-blue {
+    color: #DCF1FF;
+}
+.text-green {
+   color: #05B487;
+}
+.text-magenta {
+   color: #AA206D;
+}
+.text-purple {
+   color: #7B53F5;
+}
+.text-purple-dark {
+   color: #39266D;
+}
+.text-light-grey {
+   color: #EFEFEF;
+}

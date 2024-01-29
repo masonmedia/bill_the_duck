@@ -1,0 +1,130 @@
+---
+// import { ViewTransitions } from 'astro:transitions'
+---
+
+<header>
+	<nav class="navbar navbar-expand-lg bg-midnight-blue text-light fixed-top p-3">
+		<div class="container-fluid">
+		<a class="navbar-brand" href="/">
+        <img style="height: auto; width: 100px;" src="/src/assets/images/logos/paymentus-logo.svg" alt=""></a>
+		  <button class="navbar-toggler text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <i class="bi bi-justify fs-2"></i>
+			<!-- <span class="navbar-toggler-icon"></span> -->
+		  </button>
+		  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+			  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Paymentus</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+			  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Who we serve
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Solutions
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Company
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Dropdown
+				  </a>
+				  <ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">Action</a></li>
+					<li><a class="dropdown-item" href="#">Another action</a></li>
+					<li>
+					  <hr class="dropdown-divider">
+					</li>
+					<li><a class="dropdown-item" href="#">Something else here</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			  <!-- <form class="d-flex" role="search">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success me-2" type="submit">Search</button>
+			  </form> -->
+              <button class="btn btn-outline-primary me-2" type="button">Pay your bill</button>
+              <button class="btn btn-primary" type="button">Let's talk</button>
+			</div>
+		  </div>
+		</div>
+	  </nav>
+</div>
+	<!-- <ViewTransitions /> -->
+</header>
+<style>
+	header {
+		margin: 0;
+		padding: 0 1em;
+		background: white;
+		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+	}
+	h2 {
+		margin: 0;
+		font-size: 1em;
+	}
+
+	h2 a,
+	h2 a.active {
+		text-decoration: none;
+	}
+	/* nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav a {
+		padding: 1em 0.5em;
+		color: var(--black);
+		border-bottom: 4px solid transparent;
+		text-decoration: none;
+	}
+	nav a.active {
+		text-decoration: none;
+		border-bottom-color: var(--accent);
+	}
+	.social-links,
+	.social-links a {
+		display: flex;
+	} */
+	@media (max-width: 720px) {
+		.social-links {
+			display: none;
+		}
+	}
+</style>

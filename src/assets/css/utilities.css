@@ -1,0 +1,33 @@
+/* height */
+
+.min-vh-50 {
+    min-height: 50vh;
+}
+
+.min-vh-25 {
+    min-height: 25vh;
+}
+
+.min-vh-500 {
+    min-height: 500px;
+}
+
+/* text */
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.font-brush {
+    font-family: 'Brush Script MT', cursive;
+  }
+
+/* position */
+
+.z-0 {
+    z-index: 0;
+}
+
+.z-1 {
+    z-index: 1;
+}

@@ -1,0 +1,95 @@
+{
+        "meet_bill": {
+            "title": "Meet Bill",
+            "content": "You’ve seen him at trade shows, on Instagram and maybe even on a pair of shoes or two. Get to know our fine-feathered friend and learn more about his dedication to making life easy for everyone – and everything – who has bills."
+        },
+        "bill_bio": 
+        [
+            {
+                "title": "Name",
+                "content": "William E. Billingsworth (But you can call him Bill)"
+            },
+            {
+                "title": "Birthday",
+                "content": "February 8, 2004"
+            },
+            {
+                "title": "Lives",
+                "content": "Toronto, Canada (Summer), Charlotte, NC (Winter)"
+            },
+            {
+                "title": "Favorite Food",
+                "content": "Quackers"
+            },
+            {
+                "title": "Favorite Movie",
+                "content": "The Mighty Ducks"
+            },
+            {
+                "title": "Favorite Band",
+                "content": "The Byrds"
+            },   
+            {
+                "title": "Favorite Quote",
+                "content": "'Happiness is the richest thing we will ever own.' — Donald Duck"
+            },
+            {
+                "title": "Hobbies",
+                "content": "Collecting trade show swag; traveling to exotic locations; taking bubble baths, hanging colors; helping billers Bill Better!"
+            }
+        ],
+        "journey": [
+            {
+                "title": "The Journey to Becoming Best in Class",
+                "content": "As Paymentus celebrates 20 years, join us in revisiting the milestones of our past that have laid the foundation for our future."
+            },
+            {
+                "title": "Industry Accolades",
+                "content": "Paymentus has earned a host of industry awards and honors, including two Deloitte Canadian Technology Fast 50 Company in Ontario awards. Most recently, the Paymentus EBPP solution earned best-in-class honors from Aite-Novarica."
+            },
+            {
+                "title": "Class-Leading Partners",
+                "content": "To expand our capabilities and best serve our clients, we’ve partnered with some of the biggest players in the world of payments and retail including PayPal, Amazon and Walmart. "
+            },
+            {
+                "title": "Strategic Growth",
+                "content": "Paymentus surrounds the world of billing and payment through its strategic acquisitions that have included Tele-Works, Inc. (TWI), Payveris and more. This growth was fueled in part by the investment of  leading financial investment firm Accel-KKR and the company’s 2021 IPO (NYSE: PAY)."
+            },
+            {
+                "title": "Product Innovations",
+                "content": "The Paymentus product suite gives customers more ways to pay through the introduction of wide-ranging services including the Instant Payment Network®, Secure Service® IVR and SMS, chatbot and more."
+            }
+        ],
+        "join": {
+            "title": "Join the Billebration",
+            "content": "Watch this special event celebrating the clients, employees and partners that have helped us become a leading billing and payment provider. Paymentus CEO Dushyant Sharma shares his thoughts on the past 20 years and his vision for the next 20 and beyond.",
+            "button": "Watch now"
+        },
+        "contest": {
+            "title": "Billebration Photo Contest",
+            "content": "If there’s one thing Bill loves it’s taking pictures with his fans (he does have an <a href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram account</a> after all). And now, those photos could win you some great prizes! Send us your photos with Bill and we’ll award our favorites in the following categories: Most Creative, Most Exotic Location, Funniest, Cutest, Most Pet Friendly Contest runs until (DATE). You can enter multiple photos, so send them in!",
+            "button": "Enter now"
+        },
+        
+        "what_bill_means": 
+            {
+                "title": "What Bill means to us",
+                "quotes": [
+                    "“Bill reminds us that, while the work we do is very serious, we can always have fun. We can deliver for our clients and keep a smile on our face.”",
+                    "“It’s pretty inspiring to see a flock of ducks flying in formation. Bill symbolizes that from our team to our clients, we’re all working together and moving in one direction.”",
+                    "“In an interesting way, I think Bill’s greatest impact lies in humanizing our world. While we may work in a fast-paced, highly technical industry, Bill shows that there will always be a place for meaningful, personal connections.”",
+                    "“Bill is Bill. When you see Bill at an event, you want to take him home. I love seeing team members bringing him on their trips and showing off their photos. It makes me smile every time.” ",
+                    "“It’s our job to deliver modern, inclusive and innovative billing and payment products that so many people rely on. But that doesn’t mean that we can’t work with a smile. And yes, that little duck always makes me smile.”"
+                ]
+            },
+        
+        "ask_bill": {
+            "title": "Ask Bill",
+            "content": "After 20 years at the forefront of billing and payments, Bill has learned a thing or two about helping clients Bill Better®. Have a question for Bill or any of our payment experts? Send us an email with a question or topic for a future Bill Better® article and if we use it, you’ll gain some knowledge and a special prize.",
+            "button": "Submit a Topic"
+        },
+        "follow": {
+            "title": "Follow Bill’s Instagram Adventures",
+            "content": "Ducks are social creatures and Bill loves taking this to a whole new level. Follow Bill’s adventures around the world by connecting with us on Instagram."
+        }
+}
