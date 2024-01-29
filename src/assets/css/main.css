@@ -24,7 +24,7 @@ p, button, .btn, .nav-link {
 }
 
 .bg-billebration {
-  background: url('src/assets/images/backgrounds/bg_billebration.png') center;
+  background: url('../../assets/images/backgrounds/bg_billebration.png') center;
   background-size: cover;;
 }
 
