@@ -19,8 +19,10 @@ p, button, .btn, .nav-link {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
-.nav-link, .nav-link a {
+.nav-link, .nav-link a, a
+ {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .bg-billebration {
