@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;700;900&family=Raleway:wght@100;400;700;900&display=swap');@import '../css/utilities.css';
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
 @import '../css/colors.css';
 @import '../css/animations.css';
 
@@ -13,6 +14,10 @@ body {
     overflow-x: hidden;
     width: 100%;
     max-width: 1900px;
+}
+
+.font-galada {
+  font-family: 'Galada', 'Brush Script MT', cursive;
 }
 
 p, button, .btn, .nav-link {
