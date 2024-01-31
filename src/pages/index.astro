@@ -36,7 +36,7 @@ const apiData = await response.json();
 				<div class="row">
 					<div class="col-lg-8 offset-lg-2 text-center">
 						<Image class="h-auto" style="width: 35%; filter: drop-shadow(2px 4px 6px black);" src={badge} alt=""/>
-						<h2 class="display-4 fw-bold my-3">Cheers to 20 Years!</h2>
+						<h2 class="display-4 fw-bold font-galada my-3">Cheers to 20 Years!</h2>
 						<p class="fs-5">In 2004, an idea was hatched: simplify bill payments for the millions of bill payers throughout North America. To celebrate this idea, Paymentus welcomed someone who knows a thing or two about bills – Bill the Duck. For two decades, Bill has helped our clients keep their customer service afloat, get their ducks in a row and best serve those who have bills. Today, we’re excited to celebrate Bill and all those who have flown with us over these last 20 years. Here’s to greater successes to come!</p>
 					</div>
 				</div>
@@ -55,7 +55,7 @@ const apiData = await response.json();
 
 					<div class="row">
 						<div class="col-lg-8 offset-lg-2 text-center">
-							<h2 class="display-4 fw-bold">The Bill Bio</h2>
+							<h2 class="display-4 fw-bold font-galada">The Bill Bio</h2>
 						</div>
 					</div>
 
@@ -83,29 +83,6 @@ const apiData = await response.json();
 							</div>
 						</div>
 				</div>
-
-					<!-- <div class="row">
-						<div class="col-lg-8 offset-lg-2 text-center">
-							<div class="p-5">
-								<h2 class="display-4 fw-bold">The Bill Bio</h2>
-								<p class="fs-3">Essential stats</p>
-							</div>
-						</div>
-					</div> -->
-	
-					<!-- <div class="row row-cols-1 row-cols-3 g-3 p-4">
-						
-								{
-									data.bill_bio.map((item) => (
-									<div class="col">
-										<div class="min-vh-25 p-3 bg-logo-blue rounded-4">
-											<span class="badge fs-5 fs-light text-bg-primary p-2">{item.title}</span>
-											<h2 class="mb-0">{item.content}</h2>
-										</div>
-									</div>
-									))
-								}
-					</div> -->
 	
 					<div class="row p-4">
 						<div class="col-lg-8 offset-lg-2 text-center p-5">
@@ -119,7 +96,7 @@ const apiData = await response.json();
 								<div class="col-lg-3 col-md-6 text-dark p-2">
 									<div class:list={['p-4 rounded-4 min-vh-500', {'bg-silver': index === 2 ? 'bg-danger' : 'bg-success'}]}>
 										<i class="bi bi-trophy-fill d-inline-block fs-1 border border-secondary rounded-4 px-3 py-2"></i>
-										<h3 class="fs-2 fw-bold my-3">{item.title}</h3>
+										<h3 class="fs-2 fw-bold font-galada my-3">{item.title}</h3>
 										<p>{item.content}</p>
 									</div>
 								</div>
@@ -130,7 +107,7 @@ const apiData = await response.json();
 					<div class="row row-cols-1 row-cols-md-2 g-4 p-4">
 						<div class="col d-flex flex-column justify-content-center align-items-start">
 							<div class="p-3">
-								<h2 class="display-4 fw-bold">{data.join.title}</h2>
+								<h2 class="display-4 fw-bold font-galada">{data.join.title}</h2>
 								<p class="fs-5">{data.join.content}</p>
 								<div class="btn btn-primary">{data.join.button}</div>
 							</div>
@@ -251,7 +228,7 @@ const apiData = await response.json();
 	z-index: -1;
 	text-align: center;
 	font-size: 8vmin;
-	font-family: 'Brush Script MT', cursive;
+	font-family: 'Galada', 'Brush Script MT', cursive;
 }
 
 #bill_quotes:before {
