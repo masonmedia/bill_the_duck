@@ -1,0 +1,53 @@
+---
+const { offcanvasId } = Astro.props;
+// import navData from '../data/nav.json';
+---
+
+<div class="offcanvas offcanvas-top bg-midnight-blue text-light h-100 z-1" tabindex="-1" id={ offcanvasId } aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header border-gradient">
+    <h5 class="offcanvas-title" id="offcanvasTopLabel">Paymentus</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body p-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 p-5">
+                <!-- <div class="row"> -->
+                    <slot name="menu-links"/>   
+                <!-- </div> -->
+            </div>
+            <div class="col-lg-4 bg-logo-blue d-flex flex-column justify-content-center align-items-start min-vh-100 p-0">
+                <div class="p-5">
+                <slot name="menu-articles"/>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<style>
+    .offcanvas-header {
+        /* border-image: linear-gradient(to right, darkblue, darkorchid) 1; */
+        border-image: linear-gradient(to left, #7B53F5 0%, #2364F6 30%, #56C3FF 50%, #AA206D 90%);
+  border-bottom: 4px solid;
+margin-top: 15px;
+    }
+
+    .border-gradient {
+  border-bottom: 4px solid;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+  /* border-image: linear-gradient(to left, #7B53F5 0%, #2364F6 30%, #56C3FF 50%, #AA206D 90%); */
+}
+.offcanvas-backdrop.show {
+    opacity: 1 !important;
+    display: none;
+}   
+.offcanvas-backdrop.fade {
+    opacity: 0;
+    display: none;
+} 
+.offcanvas-backdrop {
+    display: none;
+}
+</style>

@@ -1,54 +1,43 @@
 ---
-// import { ViewTransitions } from 'astro:transitions''
+// import { ViewTransitions } from 'astro:transitions'
+import OffcanvasNav from './OffcanvasNav.astro';
 import { Image } from 'astro:assets';
 import paymentusLogo from "../assets/images/logos/paymentus-logo.svg";
-
+import navData from '../data/nav.json';
 ---
 
 <header>
 	<nav class="navbar navbar-expand-lg bg-midnight-blue text-light fixed-top p-3">
 		<div class="container-fluid">
 		<a class="navbar-brand" href="/">
-        <!-- <img style="height: auto; width: 100px;" src="../../assets/images/logos/paymentus-logo.svg" alt=""> -->
-        <Image style="height: auto; width: 100px;" class="" src={paymentusLogo} alt=""/>
+        <Image style="height: auto; width: 100px;" class="me-3" src={paymentusLogo} alt=""/>
     </a>
 		  <button class="navbar-toggler text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <i class="bi bi-justify fs-2"></i>
-			<!-- <span class="navbar-toggler-icon"></span> -->
 		  </button>
 		  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 			<div class="offcanvas-header">
 			  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Paymentus</h5>
 			  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 			</div>
-			<div class="offcanvas-body">
+			<div class="offcanvas-body bg-midnight-blue">
 			  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
 				<li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Who we serve
+                    <a class="nav-link dropdown-toggle fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu1" aria-controls="offcanvasTop">Who we serve
                     </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
                   </li>
 
 				<li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Solutions
+                     <a class="nav-link dropdown-toggle fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu2" aria-controls="offcanvasTop">Solutions
                     </a>
-                    <ul class="dropdown-menu">
+                    <!-- <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Action</a></li>
                       <li><a class="dropdown-item" href="#">Another action</a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    </ul> -->
                   </li>
 
 				<li class="nav-item dropdown">
@@ -79,57 +68,52 @@ import paymentusLogo from "../assets/images/logos/paymentus-logo.svg";
 				  </ul>
 				</li>
 			  </ul>
-			  <!-- <form class="d-flex" role="search">
-				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success me-2" type="submit">Search</button>
-			  </form> -->
               <button class="btn btn-outline-primary me-2" type="button">Pay your bill</button>
               <button class="btn btn-primary" type="button">Let's talk</button>
 			</div>
 		  </div>
 		</div>
 	  </nav>
+            <OffcanvasNav offcanvasId="menu1">
+                <div class="row" slot="menu-links">
+                {
+                    navData.nav.who_we_serve.billing_payments.sections.map((item) => (
+                        <div class="col-lg-4 d-flex flex-column justify-content-end align-items-start p-3">
+                            <h4>{'heading' in item ? item.heading : ''}</h4>
+                            <h5>{item.title}</h5>
+                            <h6 class="">{item.content}</h6>
+                        </div>
+                    ))
+                }
+                </div>
+                <div slot="menu-articles">
+                    <h4 class="fw-bold">{navData.nav.who_we_serve.billing_payments.article.title}</h4>
+                    <p class="small">{navData.nav.who_we_serve.billing_payments.article.title}</p>
+                    <a href={navData.nav.who_we_serve.billing_payments.article.link}>{navData.nav.who_we_serve.billing_payments.article.cta} ></a>
+                </div>
+            </OffcanvasNav>
+
 </div>
-	<!-- <ViewTransitions /> -->
 </header>
 <style>
-	header {
-		margin: 0;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
-	}
+    .offcanvas-backdrop.show {
+    opacity: 1 !important;
+}   
+.offcanvas-backdrop.fade {
+    opacity: 0;
+} 
 
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
-	}
-	/* nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-	}
-	.social-links,
-	.social-links a {
-		display: flex;
-	} */
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
-		}
-	}
+a, a .nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #2364F6;
+}
+
+a:hover, 
+.nav-link:hover {
+    color: #2364F6;
+}
+
 </style>

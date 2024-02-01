@@ -1,0 +1,234 @@
+{
+    "nav": {
+        "who_we_serve": {
+            "billing_payments": {
+            "heading": "Billing & Payments",
+            "sections": [
+                    {
+                        "heading": "Billing & Payments",
+                        "title": "Utility",
+                        "content": "Deploy a powerful solution for mission-critical payments to increase customer satisfaction, speed reconciliation and improve security.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    {
+                        "heading": "",
+                        "title": "Taxes",
+                        "content": "Increase collection of tax payments by offering advanced payment options to citizens.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },  
+                    { 
+                        "heading": "",
+                        "title": "Insurance",
+                        "content": "Offer advanced communication and payment solutions to ensure policyholder payment convenience.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    {
+                        "heading": "",
+                        "title": "Public Sector & Government",
+                        "content": "Simplify citizen payments with an agency-wide solution that meets the needs of any city or county.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    {
+                        "title": "Telecom",
+                        "content": "Give customers faster, more convenient billing and payment options befitting your business.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    { 
+                        "title": "Property Management",
+                        "content": "Retain tenants with a modern rental payment experience that reduces cost to serve.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    { 
+                        "title": "Healthcare",
+                        "content": "Optimize the health of your billing operation with modern features for patients and staff.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    { 
+                        "title": "Higher Education",
+                        "content": "Expand payment offerings for students, family and alumni for your many campus payments.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    { 
+                        "title": "Churches & Nonprofit",
+                        "content": "Make it easier for donors to pay it forward with expanded payment methods and channels.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+
+
+                    {
+                        "heading": "Banks & Financial Institutions",
+                        "title": "Banking & Fintech",
+                        "content": "Transform bill payment and money movement capabilities with a centralized, digital payments hub.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    {  "title": "Mortgage",
+                        "content": "Launch self-service options to reduce costs to serve and improve the homeowner payment experience.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    {
+                        "title": "Auto & Consumer Finance",
+                        "content": "Meet borrower expectations for s,peed and simplicity with next-gen eBilling.",
+                        "link": "https://www.paymentus.com/utility/"
+                    }
+                ],
+                "article": {
+                    "title": "AWARDED BEST-IN-CLASS BY AITE-NOVARICA",
+                    "content": "In 2022, Paymentus was named the 'best in class' electronic billing and payment processor by Aite-Novarica, a leading financial consultancy.",
+                    "link": "https://www.paymentus.com/industry-insights/best-in-class-ebpp-vendor/",
+                    "cta": "Read the report"
+                }
+            },
+            "banks_financial": {
+                "heading": "Banks & Financial Institutions",
+                "sections": [
+                    {
+                        "title": "Banking & Fintech",
+                        "content": "Transform bill payment and money movement capabilities with a centralized, digital payments hub.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    {  "title": "Mortgage",
+                        "content": "Launch self-service options to reduce costs to serve and improve the homeowner payment experience.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    {
+                        "title": "Auto & Consumer Finance",
+                        "content": "Meet borrower expectations for s,peed and simplicity with next-gen eBilling.",
+                        "link": "https://www.paymentus.com/utility/"
+                    }
+                ],
+                "article": {
+                    "title": "",
+                    "content": "",
+                    "link": ""
+                }
+            },
+            "business_enterprise": {
+                "heading": "Business & Enterprise Solutions",
+                "sections": [
+                    {
+                        "title": "Accounting",
+                        "content": "Save time, gain visibility and control, and close your books faster with automated data entry, approval workflow and more.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    {  "title": "B2B Solutions",
+                        "content": "Benefit from electronic invoices and fast digital payments to critical outside businesses and vendors.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    {
+                        "title": "Subscriptions & Business",
+                        "content": "Reduce churn and improve the recurring payments process for subscribers and members.",
+                        "link": "https://www.paymentus.com/utility/"
+                    }
+                ],
+                "article": {
+                    "title": "",
+                    "content": "",
+                    "link": ""
+                }
+            }
+        },
+        "solutions": {
+            "solutions" : {
+            "heading": "Solutions",
+            "sections": [
+                    {
+                        "title": "Billing & Payments",
+                        "content": "From utilities to healthcare, cities to counties and everything in between, we offer more engagement channels and payment options to meet any customer preference.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    { 
+                        "title": "Banking & Fintech",
+                        "content": "Give your customers the benefit of modern money movement and real-time payment solutions.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    { 
+                        "title": "Developers",
+                        "content": "Integrate with Paymentus channels and APIs to meet your business needs.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    { 
+                        "title": "Business Center by Paymentus",
+                        "content": "Close your books faster with automated accounts receivable and  accounts payable workflow, all integrated with your accounting system.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    { 
+                        "title": "PROFIT by Paymentus",
+                        "content": "Bookkeeping, budgeting and expense management built into your business bank account.",  
+                        "link": "https://www.paymentus.com/utility/"
+                    }
+                ],
+                "article": {
+                    "title": "",
+                    "content": "",
+                    "link": ""
+                }
+            }
+        },
+        "company": {
+            "solutions" : {
+            "heading": "Solutions",
+            "sections": [
+                    {
+                        "title": "About",
+                        "content": "Since 2004, Paymentus has delivered game-changing billing and payment solutions to 1,900+ clients and counting.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    { 
+                        "title": "Investor Relations(opens in a new window)",
+                        "content": "We are just getting started! View the latest news, updates and events related to NYSE:PAY.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    { 
+                        "title": "Join our Team",
+                        "content": "Fuel your professional growth and career with an exciting, fast-paced career at Paymentus.",
+                        "link": "https://www.paymentus.com/utility/"
+                    }
+                ],
+                "article": {
+                    "title": "",
+                    "content": "",
+                    "link": ""
+                }
+            }
+        },
+        "learn": {
+            "solutions" : {
+            "heading": "Learn",
+            "sections": [
+                    {
+                        "title": "Bill Better®",
+                        "content": "Ready to be one of the billing greats? Go beyond the bill with industry insights to push your billing and payment goals forward.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    { 
+                        "title": "Industry Insights",
+                        "content": "Read white papers, articles and the latest insights to stay ahead of the curve.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    { 
+                        "title": "Monsters",
+                        "content": "Looking to tame your billing and payment monsters? See what trouble could be lurking behind your billing and payments and how Paymentus can help you contain them..",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    { 
+                        "title": "Virtual Learning",
+                        "content": "Level up your knowledge with online seminars, on-demand videos and industry-specific sessions.",
+                        "link": "https://www.paymentus.com/utility/"
+                    },
+                    { 
+                        "title": "Frequently Asked Questions",
+                        "content": "Stay ahead with this comprehensive list of frequently asked questions on billing, payments and Paymentus.",  
+                        "link": "https://www.paymentus.com/utility/"
+                    }
+                ],
+                "article": {
+                    "title": "",
+                    "content": "",
+                    "link": ""
+                }
+            }
+        }
+
+
+    }
+}
