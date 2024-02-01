@@ -8,7 +8,7 @@
         },
         "meet_bill": {
             "title": "Meet Bill",
-            "content": "You’ve seen him at trade shows, on Instagram and maybe even on a pair of shoes or two. Get to know our fine-feathered friend and learn more about his dedication to making life easy for everyone – and everything – who has bills."
+            "content": "You’ve seen him at trade shows, on Instagram and maybe even on a pair of shoes or two. Get to know our fine-feathered friend and learn more about his dedication to making life easier for everyone – and everything – who has bills."
         },
         "bill_bio": 
         [
@@ -29,7 +29,7 @@
             },
             {
                 "title": "Hobbies",
-                "content": "Collecting trade show swag; traveling to exotic locations; taking bubble baths, helping billers Bill Better!",
+                "content": "Collecting trade show swag; traveling to exotic locations; taking bubble baths; changing colors; helping billers Bill Better!",
                 "icon": "bi-palette"
             },
             {
@@ -49,7 +49,7 @@
             },   
             {
                 "title": "Favorite Quote",
-                "content": "'Happiness is the richest thing we will ever own.' — Donald Duck",
+                "content": "'Happiness is the richest thing we will ever own.' <br> <em>— Donald Duck</em>",
                 "icon": "bi-quote"
             }
             
@@ -83,7 +83,7 @@
         },
         "contest": {
             "title": "Billebration Photo Contest",
-            "content": "If there’s one thing Bill loves it’s taking pictures with his fans (he is on <a class='fw-bold text-midnight-blue' href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram</a> after all). And now, those photos could win you some great prizes! Send us your photos with Bill and we’ll award our favorites in the following categories: Most Creative, Most Exotic Location, Funniest, Cutest, Most Pet Friendly Contest runs until (DATE). You can enter multiple photos, so send them in!",
+            "content": "If there’s one thing Bill loves it’s taking pictures with his fans (he is on <a class='fw-bold text-midnight-blue' href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram</a> after all). And now, those photos could win you some great prizes! Send us your photos with Bill and we’ll award our favorites in the following categories: Most Creative, Most Exotic Location, Funniest, Cutest, Most Pet Friendly.<br><br> Contest runs until (DATE). You can enter multiple photos, so send them in!",
             "button": "Enter now"
         },
         
@@ -101,11 +101,11 @@
         
         "ask_bill": {
             "title": "Ask Bill",
-            "content": "After 20 years at the forefront of billing and payments, Bill has learned a thing or two about helping clients Bill Better®. Have a question for Bill or any of our payment experts? Send us an email with a question or topic for a future Bill Better® article and if we use it, you’ll gain some knowledge and a special prize.",
+            "content": "After 20 years at the forefront of billing and payments, Bill has learned a thing or two about helping clients Bill Better®. Have a question for Bill or any of our payment experts? Send us an email with a question or topic for a future <a href='https://www.paymentus.com/billbetter/'>Bill Better®</a> article and if we use it, you’ll gain some knowledge and a special prize.",
             "button": "Submit a Topic"
         },
         "follow": {
             "title": "Follow Bill’s Instagram Adventures",
-            "content": "Ducks are social creatures and Bill loves taking this to a whole new level. Follow Bill’s adventures around the world by connecting with us on Instagram."
+            "content": "Ducks are social creatures and Bill loves taking this to a whole new level. Follow Bill’s adventures around the world by connecting with us on <a href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram.</a>"
         }
 }

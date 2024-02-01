@@ -4,6 +4,7 @@ import Layout from '../layouts/MainLayout.astro';
 // import ButtonPlus from '../components/ButtonPlus.astro';
 import data from '../data/bill.json';
 import { Image } from 'astro:assets';
+import ConfettiHero from '../components/ConfettiHero.astro';
 import duckHero from "../assets/images/icons/duck.png";
 import confetti from "../assets/images/backgrounds/confetti.png";
 import badge from "../assets/images/icons/anniversary_badge.png";
@@ -23,11 +24,13 @@ const apiData = await response.json();
 ---
 
 <Layout title="Paymentus 20th Anniversary Home" description="Big time.">
-		<main class="w-100">
+		<main>
+			
 			<div class="container-fluid px-0 pt-3 m-0 bg-billebration text-light">
 				<div class="row min-vh-100 position-relative">
+					<ConfettiHero />
 					<!-- <img class="position-absolute z-0 top-50 start-50 translate-middle w-75" src="./assets/images/backgrounds/confetti.png" alt=""> -->
-					<Image class="position-absolute z-0 top-50 start-50 translate-middle w-75 h-auto p-5" src={confetti} alt=""/>
+					<!-- <Image class="position-absolute z-0 top-50 start-50 translate-middle w-75 h-auto p-5" src={confetti} alt=""/> -->
 					<Image class="position-absolute top-50 start-50 translate-middle w-50 h-auto" src={duckHero} alt=""/>
 					<!-- <img class="position-absolute top-50 start-50 translate-middle w-50 h-auto" src={ducks[0].default.src} alt=""> -->
 					<div class="col-lg-12 d-flex flex-column justify-content-center align-items-center text-center position-relative">
@@ -97,7 +100,7 @@ const apiData = await response.json();
 										</div>
 										<div class="flex-grow-1 ms-3">
 											<span class="badge bg-purple-dark fw-light mb-3" style="font-size: 19px">{item.title}</span>
-											<p class="small">{item.content}</p>
+											<p class="small"><Fragment set:html={item.content} /></p>
 										</div>
 									</div>
 										))
@@ -126,9 +129,11 @@ const apiData = await response.json();
 						}
 					</div>
 
+					<!-- bill collage -->
+
 					<div class="row py-5">
 						<div class="col-lg-12 min-vh-50 d-flex align-items-center justify-content-center py-5">
-							<img src="/img/bill_collage.jpg" class="w-100" alt="...">
+							<img src="/bill_collage.png" class="w-100" alt="...">
 						</div>
 					</div>
 
@@ -136,8 +141,16 @@ const apiData = await response.json();
 
 					<div class="row position-relative min-vh-50 p-5">
 						<Image class="position-absolute z-0 top-50 start-50 translate-middle w-75" src={confetti} alt=""/>
-						<div id="contest" class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center bg-electric-blue min-vh-50 rounded-4 p-5 position-relative" style="z-index: 100">
+						<div id="contest" class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center bg-primary min-vh-50 rounded-4 p-5 position-relative" style="z-index: 100; --bs-bg-opacity: .5;">
 							<p class="fs-5"><Fragment set:html={data.contest.content} /></p>
+							<div class="d-flex">
+								<a href="marketing@paymentus.com">
+								<button class="btn btn-magenta me-2 shadow">Enter now</button>
+								</a>
+								<a href="marketing@paymentus.com">
+								<button class="btn btn-magenta shadow">Request a Duck</button>
+								</a>
+							</div>
 						</div>
 					</div>
 
@@ -164,7 +177,8 @@ const apiData = await response.json();
 						<div class="col d-flex flex-column justify-content-center align-items-start">
 							<div class="p-3">
 								<h2 class="display-4 fw-bold text-uppercase">{data.ask_bill.title}</h2>
-								<p class="fs-5">{data.ask_bill.content}</p>
+								<p class="fs-5"><Fragment set:html={data.ask_bill.content} /></p>
+								<a href="mailto:marketing@paymentus.com?subject=Bill Better Topic"></a>
 								<button class="btn btn-primary">{data.ask_bill.button}</button>
 							</div>
 						</div>
@@ -176,7 +190,7 @@ const apiData = await response.json();
 					<div class="row p-4">
 						<div class="col-lg-8 offset-lg-2 text-center p-5">
 							<h2 class="display-4 fw-bold text-uppercase">{data.follow.title}</h2>
-							<p class="fs-5">{data.follow.content}</p>
+							<p class="fs-5"><Fragment set:html={data.follow.content} /></p>
 						</div>
 					</div>
 
@@ -202,9 +216,6 @@ const apiData = await response.json();
 						</div>
 
 					<div class="py-5"></div>
-
-
-					
 				</div><!--end container-->
 
 			
