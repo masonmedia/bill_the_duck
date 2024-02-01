@@ -1,16 +1,16 @@
 ---
 // import { ViewTransitions } from 'astro:transitions'
-import OffcanvasNav from './OffcanvasNav.astro';
+// import OffcanvasNav from './OffcanvasNav.astro';
 import { Image } from 'astro:assets';
 import paymentusLogo from "../assets/images/logos/paymentus-logo.svg";
-import navData from '../data/nav.json';
+// import navData from '../data/nav.json';
 ---
 
 <header>
-	<nav class="navbar navbar-expand-lg bg-midnight-blue text-light fixed-top p-3">
+	<nav class="navbar navbar-expand-lg bg-midnight-blue text-light fixed-top" style="padding: 10px">
 		<div class="container-fluid">
 		<a class="navbar-brand" href="/">
-        <Image style="height: auto; width: 100px;" class="me-3" src={paymentusLogo} alt=""/>
+        <Image style="height: auto; width: 120px;" class="me-3" src={paymentusLogo} alt=""/>
     </a>
 		  <button class="navbar-toggler text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <i class="bi bi-justify fs-2"></i>
@@ -44,37 +44,43 @@ import navData from '../data/nav.json';
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Company
                     </a>
-                    <ul class="dropdown-menu">
+                    <!-- <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Action</a></li>
                       <li><a class="dropdown-item" href="#">Another action</a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    </ul> -->
                   </li>
 
 				<li class="nav-item dropdown">
 				  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					Dropdown
 				  </a>
-				  <ul class="dropdown-menu">
+				  <!-- <ul class="dropdown-menu">
 					<li><a class="dropdown-item" href="#">Action</a></li>
 					<li><a class="dropdown-item" href="#">Another action</a></li>
 					<li>
 					  <hr class="dropdown-divider">
 					</li>
 					<li><a class="dropdown-item" href="#">Something else here</a></li>
-				  </ul>
+				  </ul> -->
 				</li>
 			  </ul>
-              <button class="btn btn-outline-primary me-2" type="button">Pay your bill</button>
-              <button class="btn btn-primary" type="button">Let's talk</button>
+
+                <a href="https://www.paymentus.com/trying-pay-bill/">
+                    <button class="btn btn-outline-primary me-2" type="button">Pay your bill</button>
+                </a>
+                <a href="https://www.paymentus.com/lets-talk/">
+                <button class="btn btn-magenta" type="button">Let's talk</button>
+                </a>
+            </button>
 			</div>
 		  </div>
 		</div>
 	  </nav>
-            <OffcanvasNav offcanvasId="menu1">
+            <!-- <OffcanvasNav offcanvasId="menu1">
                 <div class="row" slot="menu-links">
                 {
                     navData.nav.who_we_serve.billing_payments.sections.map((item) => (
@@ -91,7 +97,7 @@ import navData from '../data/nav.json';
                     <p class="small">{navData.nav.who_we_serve.billing_payments.article.title}</p>
                     <a href={navData.nav.who_we_serve.billing_payments.article.link}>{navData.nav.who_we_serve.billing_payments.article.cta} ></a>
                 </div>
-            </OffcanvasNav>
+            </OffcanvasNav> -->
 
 </div>
 </header>
@@ -104,6 +110,7 @@ import navData from '../data/nav.json';
 } 
 
 a, a .nav-link {
+    font-weight: bold;
     text-decoration: none;
     color: #fff;
 }

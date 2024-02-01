@@ -1,0 +1,75 @@
+---
+import { Image } from 'astro:assets';
+import paymentusLogo from "../assets/images/logos/paymentus-logo.svg";
+---
+
+<footer>
+<div class="container-fluid font-montserrat p-5">
+    <div class="row text-light pb-3">
+        <div class="col-md-12 text-center text-md-start">
+            <Image style="height: auto; width: 120px;" class=" mb-3" src={paymentusLogo} alt=""/>
+        </div>
+        <div class="col-md-3 text-center text-md-start">
+            <ul class="list-unstyled">
+                <li>Instant Payment Network</li>
+                <li>Who We Serve</li>
+                <li>Join Our Team</li>
+                <li>Virtual Learning</li>
+                <li>Investor Relations(opens in a new window)</li>
+                <li>ESG Report</li>
+                <li>Privacy Notice</li>
+            </ul>
+        </div>
+        <div class="col-md-3 text-center text-md-start">
+            <ul class="list-unstyled">
+                <li>Privacy Notice to California Residents</li>
+                <li>Cigna MRF</li>
+                <li>Cookie Notice</li>
+                <li>Website Conditions of Use</li>
+                <li>Payment Authorization Terms</li>
+            </ul>
+        </div>
+        <div class="col-md-6 d-flex flex-column justify-content-start align-items-center align-items-md-end my-2 mt-md-0">
+            <a href="https://www.paymentus.com/lets-talk/">
+            <button class="btn btn-primary px-5 mb-3 d-inline-block" type="button"><span class="ps-3"></span>Let's talk<span class="pe-3"></span></button>
+            </a>
+            <a href="https://www.paymentus.com/trying-pay-bill/">
+                <button class="btn btn-gradient-1 px-5 mb-3" type="button">Pay your bill</button>
+            </a>
+            <a href="https://www.paymentus.com/trying-pay-bill/" role="button">Customer support
+            </a>
+        </div>
+    </div>
+    <div class="row pt-4 text-light border-gradient">
+        <div class="col-lg-6 text-center text-md-start">
+            <ul class="list-unstyled">
+                <li>© 2024 Paymentus Corporation, All Rights Reserved.</li>
+                <li>11605 North Community House Road | Suite 300</li>
+                <li>Charlotte, North Carolina, 28277</li>
+            </ul>
+        </div>
+        <div class="col-lg-6 align-items-end"></div>
+    </div>
+</div>
+</footer>
+
+<style>
+    ul li {
+        margin-bottom: 8px;
+        font-weight: light;
+        font-size: 14px;
+    }
+    .border-gradient {
+        border-top: 4px solid;
+        border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+        /* border-image: linear-gradient(90deg, #2364F6, #DCF1FF, #56C3FF, #AA206D); */
+    }
+    .btn-gradient-1 {
+        background: linear-gradient(#061E51, #061E51) padding-box, linear-gradient(105deg, #7B53F5 0%, #2364F6 25%, #56C3FF 50%, #AA206D 75%) border-box;
+        border-radius: 8px;
+        border: 3px solid transparent;
+        color: #fff;
+}
+
+
+</style>

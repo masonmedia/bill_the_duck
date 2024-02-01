@@ -1,4 +1,11 @@
 {
+    "hero": {
+        "title": "Billebration"
+        },
+        "cheers": {
+            "title": "Cheers to 20 Years!",
+            "content": "In 2004, an idea was hatched: simplify bill payments for the millions of bill payers throughout North America. To celebrate this idea, Paymentus welcomed someone who knows a thing or two about bills – Bill the Duck. For two decades, Bill has helped our clients keep their customer service afloat, get their ducks in a row and best serve those who have bills. Today, we’re excited to celebrate Bill and all those who have flown with us over these last 20 years. Here’s to greater successes to come!"
+        },
         "meet_bill": {
             "title": "Meet Bill",
             "content": "You’ve seen him at trade shows, on Instagram and maybe even on a pair of shoes or two. Get to know our fine-feathered friend and learn more about his dedication to making life easy for everyone – and everything – who has bills."
@@ -7,36 +14,45 @@
         [
             {
                 "title": "Name",
-                "content": "William E. Billingsworth (But you can call him Bill)"
+                "content": "William E. Billingsworth (But you can call him Bill)",
+                "icon": "bi-person"
             },
             {
                 "title": "Birthday",
-                "content": "February 8, 2004"
+                "content": "February 8, 2004",
+                "icon": "bi-cake2-fill"
             },
             {
                 "title": "Lives",
-                "content": "Toronto, Canada (Summer), Charlotte, NC (Winter)"
-            },
-            {
-                "title": "Favorite Food",
-                "content": "Quackers"
-            },
-            {
-                "title": "Favorite Movie",
-                "content": "The Mighty Ducks"
-            },
-            {
-                "title": "Favorite Band",
-                "content": "The Byrds"
-            },   
-            {
-                "title": "Favorite Quote",
-                "content": "'Happiness is the richest thing we will ever own.' — Donald Duck"
+                "content": "Toronto, Canada (Summer), Charlotte, NC (Winter)",
+                "icon": "bi-pin-map-fill"
             },
             {
                 "title": "Hobbies",
-                "content": "Collecting trade show swag; traveling to exotic locations; taking bubble baths, hanging colors; helping billers Bill Better!"
+                "content": "Collecting trade show swag; traveling to exotic locations; taking bubble baths, helping billers Bill Better!",
+                "icon": "bi-palette"
+            },
+            {
+                "title": "Favorite Food",
+                "content": "Quackers",
+                "icon": "bi-patch-check"
+            },
+            {
+                "title": "Favorite Movie",
+                "content": "The Mighty Ducks",
+                "icon": "bi-tv"
+            },
+            {
+                "title": "Favorite Band",
+                "content": "The Byrds",
+                "icon": "bi-file-earmark-music"
+            },   
+            {
+                "title": "Favorite Quote",
+                "content": "'Happiness is the richest thing we will ever own.' — Donald Duck",
+                "icon": "bi-quote"
             }
+            
         ],
         "journey": [
             {
@@ -73,7 +89,7 @@
         
         "what_bill_means": 
             {
-                "title": "What Bill means to us",
+                "title": "What Bill Means to Us",
                 "quotes": [
                     "“Bill reminds us that, while the work we do is very serious, we can always have fun. We can deliver for our clients and keep a smile on our face.”",
                     "“It’s pretty inspiring to see a flock of ducks flying in formation. Bill symbolizes that from our team to our clients, we’re all working together and moving in one direction.”",

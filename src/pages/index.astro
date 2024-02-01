@@ -31,22 +31,22 @@ const apiData = await response.json();
 					<Image class="position-absolute top-50 start-50 translate-middle w-50 h-auto" src={duckHero} alt=""/>
 					<!-- <img class="position-absolute top-50 start-50 translate-middle w-50 h-auto" src={ducks[0].default.src} alt=""> -->
 					<div class="col-lg-12 d-flex flex-column justify-content-center align-items-center text-center position-relative">
-						<h1 class="fw-900 text-uppercase" style="font-size: 16vw; color: transparent; -webkit-text-stroke: 2px #ffffff;">Billebration</h1>
+						<h1 class="fw-900 text-uppercase" style="font-size: 16vw; color: transparent; -webkit-text-stroke: 2px #ffffff;">{data.hero.title}</h1>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="col-lg-8 offset-lg-2 text-center p-5">
 						<Image class="h-auto" style="width: 35%; filter: drop-shadow(2px 4px 6px black);" src={badge} alt=""/>
-						<h2 class="display-4 fw-bold  my-3">Cheers to 20 Years!</h2>
-						<p class="fs-5">In 2004, an idea was hatched: simplify bill payments for the millions of bill payers throughout North America. To celebrate this idea, Paymentus welcomed someone who knows a thing or two about bills – Bill the Duck. For two decades, Bill has helped our clients keep their customer service afloat, get their ducks in a row and best serve those who have bills. Today, we’re excited to celebrate Bill and all those who have flown with us over these last 20 years. Here’s to greater successes to come!</p>
+						<h2 class="display-4 fw-bold text-uppercase my-3">{data.cheers.title}</h2>
+						<p class="fs-5">{data.cheers.content}</p>
 					</div>
 				</div>
 
 				<div class="row row-cols-1 row-cols-lg-2 p-5">
 					<div class="col">
 						<div class="d-flex flex-column justify-content-center align-items-start p-5">
-							<h2 class="display-4 fw-bold mb-3 ">Meet Bill</h2>
-							<p class="fs-4">You’ve seen him at trade shows, on Instagram and maybe even on a pair of shoes or two. b Get to know our fine-feathered friend and learn more about his dedication to making life easy for everyone – and everything – who has bills.</p>
+							<h2 class="display-4 fw-bold text-uppercase mb-3 ">{data.meet_bill.title}</h2>
+							<p class="fs-5">{data.meet_bill.content}</p>
 						</div>
 					</div>
 					<div class="col d-flex justify-content-center align-items-center">
@@ -54,31 +54,52 @@ const apiData = await response.json();
 					</div>
 					</div>
 
-					<div class="row">
+					<div class="row pb-3">
 						<div class="col-lg-8 offset-lg-2 text-center">
-							<h2 class="display-4 fw-bold ">The Bill Bio</h2>
+							<h2 class="display-4 fw-bold text-uppercase">The Bill Bio</h2>
 						</div>
 					</div>
 
 					<div class="row row-cols-1 row-cols-lg-2 g-3">
 						<div class="col">
-							<div class="p-5">
+							<div class="p-4">
+
+								<!-- <div class="alert bg-midnight-blue rounded-4 shadow p-4" role="alert">
+									<span class="badge bg-purple fw-light mb-2" style="font-size: 19px">{item.title}</span>
+									<p class="mb-0">{item.content}</p>
+								</div> -->
 								{
 									data.bill_bio.slice(0,4).map((item) => (
-										<div class="alert bg-purple rounded-4 shadow" role="alert">
-											<h2 class="mb-0">{item.title}: <span class="">{item.content}</span></h2>
+									<div class="d-flex bg-midnight-blue rounded-4 p-3 mb-2">
+										<div class="flex-shrink-0 d-flex justify-content-center align-items-center bg-purple rounded-3">
+											<i class:list={["bi fs-1 py-2 px-3", item.icon]}></i>
 										</div>
+										<div class="flex-grow-1 ms-3">
+											<span class="badge bg-purple-dark fw-light mb-3" style="font-size: 19px">{item.title}</span>
+											<p class="small">{item.content}</p>
+										</div>
+									</div>
 									))
 								}
 							</div>
 						</div>
 						<div class="col">
-							<div class="p-5">
+							<div class="p-4">
+								<!-- <div class="alert bg-midnight-blue rounded-4 shadow p-4" role="alert">
+									<span class="badge bg-purple fw-light mb-3" style="font-size: 19px">{item.title}</span>
+									<p class="mb-0">{item.content}</p>
+								</div> -->
 									{
 										data.bill_bio.slice(4,8).map((item) => (
-											<div class="alert bg-purple rounded-4 shadow" role="alert">
-												<h2 class="mb-0">{item.title}: <span class="">{item.content}</span></h2>
-											</div>
+										<div class="d-flex bg-midnight-blue rounded-4 p-3 mb-2">
+										<div class="flex-shrink-0 d-flex justify-content-center align-items-center bg-purple rounded-3">
+											<i class:list={["bi fs-1 py-2 px-3", item.icon]}></i>
+										</div>
+										<div class="flex-grow-1 ms-3">
+											<span class="badge bg-purple-dark fw-light mb-3" style="font-size: 19px">{item.title}</span>
+											<p class="small">{item.content}</p>
+										</div>
+									</div>
 										))
 									}
 							</div>
@@ -87,17 +108,17 @@ const apiData = await response.json();
 	
 					<div class="row p-4">
 						<div class="col-lg-8 offset-lg-2 text-center p-5">
-							<h2 class="display-4 fw-bold ">
+							<h2 class="display-4 fw-bold text-uppercase">
 								{data.journey[0].title}
 							</h2>
-							<p class="fs-4">{data.journey[0].content}</p>
+							<p class="fs-5">{data.journey[0].content}</p>
 						</div>
 						{
 							data.journey.slice(1,5).map((item, index) => (
 								<div class="col-lg-3 col-md-6 text-dark p-2">
-									<div class:list={['p-4 rounded-4 min-vh-500', {'bg-silver': index === 2 ? 'bg-danger' : 'bg-success'}]}>
+									<div class:list={['p-4 rounded-4', {'bg-silver': index === 2 ? 'bg-danger' : 'bg-success'}]} style="min-height: 450px">
 										<i class="bi bi-trophy-fill d-inline-block fs-1 border border-secondary rounded-4 px-3 py-2"></i>
-										<h3 class="fs-2 fw-bold  my-3">{item.title}</h3>
+										<h3 class="fs-2 fw-bold my-3">{item.title}</h3>
 										<p>{item.content}</p>
 									</div>
 								</div>
@@ -105,29 +126,16 @@ const apiData = await response.json();
 						}
 					</div>
 
-					<!-- <div class="row row-cols-1 row-cols-md-2 g-4 p-4">
-						<div class="col d-flex flex-column justify-content-center align-items-start">
-							<div class="p-3">
-								<h2 class="display-4 fw-bold ">{data.join.title}</h2>
-								<p class="fs-5">{data.join.content}</p>
-								<div class="btn btn-primary">{data.join.button}</div>
-							</div>
-						</div>
-						<div class="col p-5">
-							<img src="https://placehold.co/300x300" class="placeholder card-img-top w-100 rounded-circle shadow" alt="...">
-						</div>
-					</div> -->
-
-					<div class="row min-vh-100 pt-5">
-						<div class="col-lg-12 col-lg-12 py-5 d-flex align-items-center justify-content-center py-5">
-							<Image class="w-100" src={collage} alt=""/>
+					<div class="row py-5">
+						<div class="col-lg-12 min-vh-50 d-flex align-items-center justify-content-center py-5">
+							<img src="/img/bill_collage.jpg" class="w-100" alt="...">
 						</div>
 					</div>
 
 					<!-- contest -->
 
 					<div class="row position-relative min-vh-50 p-5">
-						<img class="position-absolute z-0 top-50 start-50 translate-middle w-75" src="src/assets/images/backgrounds/confetti.png" alt="">
+						<Image class="position-absolute z-0 top-50 start-50 translate-middle w-75" src={confetti} alt=""/>
 						<div id="contest" class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center bg-electric-blue min-vh-50 rounded-4 p-5 position-relative" style="z-index: 100">
 							<p class="fs-5"><Fragment set:html={data.contest.content} /></p>
 						</div>
@@ -139,11 +147,11 @@ const apiData = await response.json();
 
 					<div class="row g-5 p-5">
 						<div class="col-lg-12">
-							<h2 class="display-4 fw-bold">{data.what_bill_means.title}</h2>
+							<h2 class="display-4 fw-bold text-uppercase">{data.what_bill_means.title}</h2>
 						</div>
 						{ data.what_bill_means.quotes.map((item, index) => (
 							<div id="bill_quotes" class="col-md-6 col-lg-4 flex-fill position-relative">
-								<div class="p-5 text-start min-vh-50 bg-purple text-light rounded-5 shadow-lg">
+								<div class="p-5 text-start bg-purple text-light rounded-5 shadow-lg" style="min-height: 350px">
 									<p class="fs-5">{item}</p>
 								</div>
 							</div>
@@ -155,7 +163,7 @@ const apiData = await response.json();
 					<div class="row row-cols-1 row-cols-md-2 g-4 p-4">
 						<div class="col d-flex flex-column justify-content-center align-items-start">
 							<div class="p-3">
-								<h2 class="display-4 fw-bold">{data.ask_bill.title}</h2>
+								<h2 class="display-4 fw-bold text-uppercase">{data.ask_bill.title}</h2>
 								<p class="fs-5">{data.ask_bill.content}</p>
 								<button class="btn btn-primary">{data.ask_bill.button}</button>
 							</div>
@@ -167,10 +175,8 @@ const apiData = await response.json();
 
 					<div class="row p-4">
 						<div class="col-lg-8 offset-lg-2 text-center p-5">
-							<h2 class="display-4 fw-bold">
-								{data.follow.title}
-							</h2>
-							<p class="fs-4">{data.follow.content}</p>
+							<h2 class="display-4 fw-bold text-uppercase">{data.follow.title}</h2>
+							<p class="fs-5">{data.follow.content}</p>
 						</div>
 					</div>
 

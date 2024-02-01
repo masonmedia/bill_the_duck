@@ -1,0 +1,9 @@
+.btn-magenta {
+    background-color: #AA206D;
+    color: #fff;
+}
+
+.btn-magenta:hover {
+    background-color: #a71967;
+    color: #fff;
+}
