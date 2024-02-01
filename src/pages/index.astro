@@ -117,21 +117,28 @@ const apiData = await response.json();
 							<p class="fs-5">{data.journey[0].content}</p>
 						</div>
 						{
-							data.journey.slice(1,5).map((item, index) => (
+							data.journey.slice(1,5).map((item) => (
 								<div class="col-lg-3 col-md-6 text-dark p-2">
 
 									<div class="card bg-midnight-blue text-light rounded-4" aria-hidden="true" style="min-height: 550px">
-									<img src={item.img} class="card-img-top w-100 p-3" alt="...">
-									<div class="card-body">
-									<h4 class="card-title fw-bold">{item.title}
-									</h4>
-									<p class="card-text">{item.content}</p>
-									</div>
-							  </div>
+										
+										<img src={item.img} class="card-img-top w-100 p-3" alt="...">
+										<div class="card-body">
+											
+											<h4 class="card-title fw-bold text-uppercase">
+												<span class="badge rounded-3 text-bg-primary mb-2 p-2">
+												<i class:list={["bi fs-3", item.icon]}></i>
+												</span>
+												{item.title}</h4>
+											<p class="card-text">{item.content}</p>
+										</div>
+							  		</div>
 								</div>
 							))
 						}
 					</div>
+
+
 
 					<!-- bill collage -->
 

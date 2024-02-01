@@ -62,22 +62,26 @@
             {
                 "title": "Industry Accolades",
                 "content": "Paymentus has earned a host of industry awards and honors, including two Deloitte Canadian Technology Fast 50 Company in Ontario awards. Most recently, the Paymentus EBPP solution earned best-in-class honors from Aite-Novarica.",
-                "img": "/img/icons/icon_trophy.png"
+                "img": "/img/icons/icon_trophy.png",
+                "icon": "bi-trophy"
             },
             {
                 "title": "Class-Leading Partners",
                 "content": "To expand our capabilities and best serve our clients, we’ve partnered with some of the biggest players in the world of payments and retail including PayPal, Amazon and Walmart.",
-                "img": "/img/icons/icon_best.png"
+                "img": "/img/icons/icon_best.png",
+                "icon": "bi-patch-check"
             },
             {
                 "title": "Strategic Growth",
                 "content": "Paymentus surrounds the world of billing and payment through its strategic acquisitions that have included Tele-Works, Inc. (TWI), Payveris and more. This growth was fueled in part by the investment of  leading financial investment firm Accel-KKR and the company’s 2021 IPO (NYSE: PAY).",
-                "img": "/img/icons/icon_nyse.png"
+                "img": "/img/icons/icon_nyse.png",
+                "icon": "bi-graph-up-arrow"
             },
             {
                 "title": "Product Innovations",
                 "content": "The Paymentus product suite gives customers more ways to pay through the introduction of wide-ranging services including the Instant Payment Network®, Secure Service® IVR and SMS, chatbot and more.",
-                "img": "/img/icons/icon_money.png"
+                "img": "/img/icons/icon_money.png",
+                "icon": "bi-motherboard"
             }
         ],
         "join": {
