@@ -6,10 +6,10 @@ import data from '../data/bill.json';
 import { Image } from 'astro:assets';
 import ConfettiHero from '../components/ConfettiHero.astro';
 import duckHero from "../assets/images/icons/duck.png";
-import confetti from "../assets/images/backgrounds/confetti.png";
+// import confetti from "../assets/images/backgrounds/confetti.png";
 import badge from "../assets/images/icons/anniversary_badge.png";
-import duckBlue from "../assets/images/icons/duck_blue.png";
-import collage from "../assets/images/bill_collage.jpg";
+import duckBlue from "../assets/images/icons/blue_duck2.png";
+// import collage from "../assets/images/duck_paper_collage.jpg";
 
 const ducks = await Astro.glob("../assets/images/icons/*");
 // https://markjames.dev/blog/dynamically-importing-images-astro
@@ -119,11 +119,15 @@ const apiData = await response.json();
 						{
 							data.journey.slice(1,5).map((item, index) => (
 								<div class="col-lg-3 col-md-6 text-dark p-2">
-									<div class:list={['p-4 rounded-4', {'bg-silver': index === 2 ? 'bg-danger' : 'bg-success'}]} style="min-height: 450px">
-										<i class="bi bi-trophy-fill d-inline-block fs-1 border border-secondary rounded-4 px-3 py-2"></i>
-										<h3 class="fs-2 fw-bold my-3">{item.title}</h3>
-										<p>{item.content}</p>
+
+									<div class="card bg-midnight-blue text-light rounded-4" aria-hidden="true" style="min-height: 550px">
+									<img src={item.img} class="card-img-top w-100 p-3" alt="...">
+									<div class="card-body">
+									<h4 class="card-title fw-bold">{item.title}
+									</h4>
+									<p class="card-text">{item.content}</p>
 									</div>
+							  </div>
 								</div>
 							))
 						}
@@ -131,17 +135,18 @@ const apiData = await response.json();
 
 					<!-- bill collage -->
 
-					<div class="row py-5">
+					<div class="row pb-5">
 						<div class="col-lg-12 min-vh-50 d-flex align-items-center justify-content-center py-5">
-							<img src="/bill_collage.png" class="w-100" alt="...">
+							<img src="/img/duck_paper_collage_trans.png" class="w-100" alt="...">
 						</div>
 					</div>
 
 					<!-- contest -->
 
 					<div class="row position-relative min-vh-50 p-5">
-						<Image class="position-absolute z-0 top-50 start-50 translate-middle w-75" src={confetti} alt=""/>
-						<div id="contest" class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center bg-primary min-vh-50 rounded-4 p-5 position-relative" style="z-index: 100; --bs-bg-opacity: .5;">
+						<img class="d-none d-lg-block position-absolute z-0 top-50 start-50 translate-middle w-75" src="/img/confetti.png" alt="">
+						<img class="d-block d-lg-none position-absolute z-0 top-50 start-50 translate-middle w-100" src="/img/confetti.png" alt="">
+						<div id="contest" class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center bg-primary min-vh-50 rounded-4 p-5 position-relative z-0" style="z-index: 100; --bs-bg-opacity: .7;">
 							<p class="fs-5"><Fragment set:html={data.contest.content} /></p>
 							<div class="d-flex">
 								<a href="marketing@paymentus.com">
@@ -162,7 +167,7 @@ const apiData = await response.json();
 						<div class="col-lg-12">
 							<h2 class="display-4 fw-bold text-uppercase">{data.what_bill_means.title}</h2>
 						</div>
-						{ data.what_bill_means.quotes.map((item, index) => (
+						{ data.what_bill_means.quotes.map((item) => (
 							<div id="bill_quotes" class="col-md-6 col-lg-4 flex-fill position-relative">
 								<div class="p-5 text-start bg-purple text-light rounded-5 shadow-lg" style="min-height: 350px">
 									<p class="fs-5">{item}</p>
@@ -173,8 +178,8 @@ const apiData = await response.json();
 
 					<!-- ask bill -->
 
-					<div class="row row-cols-1 row-cols-md-2 g-4 p-4">
-						<div class="col d-flex flex-column justify-content-center align-items-start">
+					<div class="row row-cols-1 row-cols-lg-2 g-4 p-4">
+						<div class="col d-flex flex-column justify-content-center align-items-start text-center text-lg-start">
 							<div class="p-3">
 								<h2 class="display-4 fw-bold text-uppercase">{data.ask_bill.title}</h2>
 								<p class="fs-5"><Fragment set:html={data.ask_bill.content} /></p>
@@ -182,8 +187,8 @@ const apiData = await response.json();
 								<button class="btn btn-primary">{data.ask_bill.button}</button>
 							</div>
 						</div>
-						<div class="col d-flex flex-column justify-content-center align-items-center bg-electric-blue min-vh-500 p-5 rounded-5 shadow-lg">
-							<h2 class="fw-bold text-uppercase" style="font-size: 12vmin; text-shadow: 5px 5px 5px #000">#BillBetter</h2>
+						<div class="col d-flex flex-column justify-content-center align-items-center min-vh-500">
+							<img src="/img/bill_better.png" class="w-100" alt="Paymentus Bill Better">	
 						</div>
 					</div>
 
@@ -217,9 +222,6 @@ const apiData = await response.json();
 
 					<div class="py-5"></div>
 				</div><!--end container-->
-
-			
-
 		</main>
 	</Layout>
 

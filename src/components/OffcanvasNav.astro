@@ -11,16 +11,17 @@ const { offcanvasId } = Astro.props;
   <div class="offcanvas-body p-0">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-8 p-5">
-                <!-- <div class="row"> -->
+            <slot />
+            <!-- <div class="col-lg-8 p-5">
+                <div class="row">
                     <slot name="menu-links"/>   
-                <!-- </div> -->
+                </div>
             </div>
             <div class="col-lg-4 bg-logo-blue d-flex flex-column justify-content-center align-items-start min-vh-100 p-0">
                 <div class="p-5">
                 <slot name="menu-articles"/>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
   </div>
@@ -31,7 +32,6 @@ const { offcanvasId } = Astro.props;
         /* border-image: linear-gradient(to right, darkblue, darkorchid) 1; */
         border-image: linear-gradient(to left, #7B53F5 0%, #2364F6 30%, #56C3FF 50%, #AA206D 90%);
   border-bottom: 4px solid;
-margin-top: 15px;
     }
 
     .border-gradient {

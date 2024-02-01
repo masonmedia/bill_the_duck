@@ -1,13 +1,13 @@
 ---
 // import { ViewTransitions } from 'astro:transitions'
-// import OffcanvasNav from './OffcanvasNav.astro';
+import OffcanvasNav from './OffcanvasNav.astro';
 import { Image } from 'astro:assets';
 import paymentusLogo from "../assets/images/logos/paymentus-logo.svg";
-// import navData from '../data/nav.json';
+import navData from '../data/nav.json';
 ---
 
 <header>
-	<nav class="navbar navbar-expand-lg bg-midnight-blue text-light fixed-top" style="padding: 10px">
+	<nav class="navbar navbar-expand-lg bg-purple-dark text-light fixed-top" style="padding: 10px">
 		<div class="container-fluid">
 		<a class="navbar-brand" href="/">
         <Image style="height: auto; width: 120px;" class="me-3" src={paymentusLogo} alt=""/>
@@ -21,7 +21,7 @@ import paymentusLogo from "../assets/images/logos/paymentus-logo.svg";
 			  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 			</div>
 			<div class="offcanvas-body bg-midnight-blue">
-			  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+			  <ul class="navbar-nav bg-purple-dark justify-content-start flex-grow-1 pe-3">
 				<li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu1" aria-controls="offcanvasTop">Who we serve
                     </a>
@@ -69,35 +69,45 @@ import paymentusLogo from "../assets/images/logos/paymentus-logo.svg";
 				</li>
 			  </ul>
 
+              <div class="bg-purple-dark">
                 <a href="https://www.paymentus.com/trying-pay-bill/">
-                    <button class="btn btn-outline-primary me-2" type="button">Pay your bill</button>
+                    <button class="btn btn-primary me-2" type="button">Pay your bill</button>
                 </a>
                 <a href="https://www.paymentus.com/lets-talk/">
                 <button class="btn btn-magenta" type="button">Let's talk</button>
                 </a>
-            </button>
+                </div>
 			</div>
 		  </div>
 		</div>
 	  </nav>
-            <!-- <OffcanvasNav offcanvasId="menu1">
-                <div class="row" slot="menu-links">
-                {
-                    navData.nav.who_we_serve.billing_payments.sections.map((item) => (
-                        <div class="col-lg-4 d-flex flex-column justify-content-end align-items-start p-3">
-                            <h4>{'heading' in item ? item.heading : ''}</h4>
-                            <h5>{item.title}</h5>
-                            <h6 class="">{item.content}</h6>
-                        </div>
-                    ))
-                }
+            <OffcanvasNav offcanvasId="menu1">
+                <div class="col-lg-8 d-flex px-5">
+                    <div class="row">
+                        {
+                            navData.nav.who_we_serve.billing_payments.sections.map((item) => (
+                                <div class="col-lg-4 d-flex flex-column justify-content-end align-items-start p-3">
+                                    <h4>{'heading' in item ? item.heading : ''}</h4>
+                                    <h5>{item.title}</h5>
+                                    <h6 class="">{item.content}</h6>
+                                </div>
+                            ))
+                        }
+                    </div>
                 </div>
-                <div slot="menu-articles">
+                <div class="col-lg-4 bg-logo-blue d-flex flex-column justify-content-center align-items-start min-vh-100 p-0">
+                    <div class="p-5">
+                        <h4 class="fw-bold">{navData.nav.who_we_serve.billing_payments.article.title}</h4>
+                        <p class="small">{navData.nav.who_we_serve.billing_payments.article.title}</p>
+                        <a href={navData.nav.who_we_serve.billing_payments.article.link}>{navData.nav.who_we_serve.billing_payments.article.cta} ></a>
+                    </div>
+                </div>
+                <!-- <div slot="menu-articles">
                     <h4 class="fw-bold">{navData.nav.who_we_serve.billing_payments.article.title}</h4>
                     <p class="small">{navData.nav.who_we_serve.billing_payments.article.title}</p>
                     <a href={navData.nav.who_we_serve.billing_payments.article.link}>{navData.nav.who_we_serve.billing_payments.article.cta} ></a>
-                </div>
-            </OffcanvasNav> -->
+                </div> -->
+            </OffcanvasNav>
 
 </div>
 </header>
