@@ -4,8 +4,6 @@ import Layout from '../layouts/MainLayout.astro';
 import data from '../data/bill.json';
 import { Image } from 'astro:assets';
 import ConfettiHero from '../components/ConfettiHero.astro';
-// import duckHero from "../assets/images/icons/duck.png";
-import badge from "../assets/images/icons/anniversary_badge.png";
 import Post1 from '../components/IGpost1.astro';
 import Post2 from '../components/IGpost2.astro';
 import Post3 from '../components/IGpost3.astro';
@@ -41,7 +39,8 @@ const apiData = await response.json();
 				</div>
 				<div class="row">
 					<div class="col-lg-8 offset-lg-2 text-center p-5">
-						<Image class="h-auto" style="width: 35%; filter: drop-shadow(2px 4px 6px black);" src={badge} alt=""/>
+						<!-- <Image class="h-auto" style="width: 35%; filter: drop-shadow(2px 4px 6px black);" src={badge} alt=""/> -->
+						<img class="h-auto" style="width: 35%; filter: drop-shadow(2px 4px 6px black);" src="/img/icons/anniversary_badge.png" alt="">
 						<h2 class="display-4 fw-bold text-uppercase my-3">{data.cheers.title}</h2>
 						<p class="fs-5">{data.cheers.content}</p>
 					</div>
@@ -262,6 +261,7 @@ svg text {
 	80%  {fill: rgba(72,138,204,0); stroke: rgba(255,255,255,1); stroke-width: 3; }
 	100% {
 		fill: rgba(255,255,255,0.8);
+		fill: darkorange;
 		filter: drop-shadow(2px 2px 5px #000);
 		stroke: rgba(255,255,255,0);
 		stroke-dashoffset: -25%; 
