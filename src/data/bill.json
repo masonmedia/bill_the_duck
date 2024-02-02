@@ -62,26 +62,22 @@
             {
                 "title": "Industry Accolades",
                 "content": "Paymentus has earned a host of industry awards and honors, including two Deloitte Canadian Technology Fast 50 Company in Ontario awards. Most recently, the Paymentus EBPP solution earned best-in-class honors from Aite-Novarica.",
-                "img": "/img/icons/icon_trophy.png",
-                "icon": "bi-trophy"
+                "img": "/img/icons/icon_best.png"
             },
             {
                 "title": "Class-Leading Partners",
                 "content": "To expand our capabilities and best serve our clients, we’ve partnered with some of the biggest players in the world of payments and retail including PayPal, Amazon and Walmart.",
-                "img": "/img/icons/icon_best.png",
-                "icon": "bi-patch-check"
+                "img": "/img/icons/icon_trophy.png"
             },
             {
                 "title": "Strategic Growth",
                 "content": "Paymentus surrounds the world of billing and payment through its strategic acquisitions that have included Tele-Works, Inc. (TWI), Payveris and more. This growth was fueled in part by the investment of  leading financial investment firm Accel-KKR and the company’s 2021 IPO (NYSE: PAY).",
-                "img": "/img/icons/icon_nyse.png",
-                "icon": "bi-graph-up-arrow"
+                "img": "/img/icons/icon_nyse.png"
             },
             {
                 "title": "Product Innovations",
                 "content": "The Paymentus product suite gives customers more ways to pay through the introduction of wide-ranging services including the Instant Payment Network®, Secure Service® IVR and SMS, chatbot and more.",
-                "img": "/img/icons/icon_money.png",
-                "icon": "bi-motherboard"
+                "img": "/img/icons/icon_money.png"
             }
         ],
         "join": {
@@ -91,8 +87,9 @@
         },
         "contest": {
             "title": "Billebration Photo Contest",
-            "content": "If there’s one thing Bill loves it’s taking pictures with his fans (he is on <a class='fw-bold text-green' href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram</a> after all). And now, those photos could win you some great prizes! Send us your photos with Bill and we’ll award our favorites in the following categories: Most Creative, Most Exotic Location, Funniest, Cutest, Most Pet Friendly.<br><br> Contest runs until (DATE). You can enter multiple photos, so send them in!",
-            "button": "Enter now"
+            "content": "If there’s one thing Bill loves it’s taking pictures with his fans (he is on <a class='fw-bold text-green' href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram</a> after all). And now, those photos could win you some great prizes! Send us your photos with Bill and we’ll award our favorites in the following categories: Most Creative, Most Exotic Location, Funniest, Cutest, Most Pet Friendly.<br><br> Contest runs until (DATE). You can enter multiple photos, so send them in! You can also request a special 20th anniversary duck. ",
+            "button": "Enter Now",
+            "button2": "Request a Duck"
         },
         
         "what_bill_means": 
@@ -109,7 +106,7 @@
         
         "ask_bill": {
             "title": "Ask Bill",
-            "content": "After 20 years at the forefront of billing and payments, Bill has learned a thing or two about helping clients Bill Better®. Have a question for Bill or any of our payment experts? Send us an email with a question or topic for a future <a href='https://www.paymentus.com/billbetter/'>Bill Better®</a> article and if we use it, you’ll gain some knowledge and a special prize.",
+            "content": "After 20 years at the forefront of billing and payments, Bill has learned a thing or two about helping clients <a class='fw-bold text-green' href='https://www.paymentus.com/billbetter/'>Bill Better®</a>. Have a question for Bill or any of our payment experts? Send us an email with a question or topic for a future Bill Better® article and if we use it, you’ll gain some knowledge and a special prize.",
             "button": "Submit a Topic"
         },
         "follow": {
