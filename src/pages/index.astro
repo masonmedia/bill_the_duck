@@ -1,15 +1,16 @@
 ---
 
 import Layout from '../layouts/MainLayout.astro';
-// import ButtonPlus from '../components/ButtonPlus.astro';
 import data from '../data/bill.json';
 import { Image } from 'astro:assets';
 import ConfettiHero from '../components/ConfettiHero.astro';
 import duckHero from "../assets/images/icons/duck.png";
-// import confetti from "../assets/images/backgrounds/confetti.png";
 import badge from "../assets/images/icons/anniversary_badge.png";
 import duckBlue from "../assets/images/icons/blue_duck2.png";
-// import collage from "../assets/images/duck_paper_collage.jpg";
+import Post1 from '../components/IGpost1.astro';
+import Post2 from '../components/IGpost2.astro';
+import Post3 from '../components/IGpost3.astro';
+import Post4 from '../components/IGpost4.astro';
 
 const ducks = await Astro.glob("../assets/images/icons/*");
 // https://markjames.dev/blog/dynamically-importing-images-astro
@@ -206,24 +207,19 @@ const apiData = await response.json();
 					</div>
 
 					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 px-4">
-						{
-						apiData.slice(0,4).map((item) => (
 						<div class="col">
-							<div class="card" aria-hidden="true">
-							<img src="https://placehold.co/1000x500" class="card-img-top w-100" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">
-								{item.title}
-								</h5>
-								<p class="card-text">
-								Ut incididunt enim ex eu exercitation. Irure Lorem voluptate amet esse sunt quis sunt. Aliquip id elit amet magna esse exercitation pariatur quis enim adipisicing. Ex consectetur eu nulla labore.
-								</p>
-								<a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
-							</div>
-							</div>
+							<Post1 client:visible />
 						</div>
-							))
-						}
+						<div class="col">
+							<Post2 client:visible />
+						</div>
+						<div class="col">
+							<Post3 client:visible />
+						</div>
+						<div class="col">
+							<Post4 client:visible />
+						</div>
+					
 					</div>
 
 				<div class="py-5"></div>
