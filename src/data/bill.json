@@ -87,7 +87,7 @@
         },
         "contest": {
             "title": "Billebration Photo Contest",
-            "content": "If there’s one thing Bill loves it’s taking pictures with his fans (he is on <a class='fw-bold text-green' href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram</a> after all). And now, those photos could win you some great prizes! Send us your photos with Bill and we’ll award our favorites in the following categories: Most Creative, Most Exotic Location, Funniest, Cutest, Most Pet Friendly.<br><br> Contest runs until (DATE). You can enter multiple photos, so send them in! You can also request a special 20th anniversary duck. ",
+            "content": "If there’s one thing Bill loves it’s taking pictures with his fans (he is on <a class='fw-bold text-green' href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram</a> after all). And now, those photos could win you some great prizes! Send us your photos with Bill and we’ll award our favorites in the following categories: Most Creative, Most Exotic Location, Funniest, Cutest, Most Pet Friendly.<br><br> Contest runs until March 31st. You can enter multiple photos, so send them in! You can also request a special 20th anniversary duck. ",
             "button": "Enter Now",
             "button2": "Request a Duck"
         },
@@ -111,6 +111,6 @@
         },
         "follow": {
             "title": "Follow Bill’s Instagram Adventures",
-            "content": "Ducks are social creatures and Bill loves taking this to a whole new level. Follow Bill’s adventures around the world by connecting with us on <a href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram.</a>"
+            "content": "Ducks are social creatures and Bill loves taking this to a whole new level. Follow Bill’s adventures around the world by connecting with us on <a class='text-green fw-bold' href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram.</a>"
         }
 }
