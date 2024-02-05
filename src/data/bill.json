@@ -96,11 +96,26 @@
             {
                 "title": "What Bill Means to Us",
                 "quotes": [
-                    "“Bill reminds us that, while the work we do is very serious, we can always have fun. We can deliver for our clients and keep a smile on our face.”",
-                    "“It’s pretty inspiring to see a flock of ducks flying in formation. Bill symbolizes that from our team to our clients, we’re all working together and moving in one direction.”",
-                    "“In an interesting way, I think Bill’s greatest impact lies in humanizing our world. While we may work in a fast-paced, highly technical industry, Bill shows that there will always be a place for meaningful, personal connections.”",
-                    "“Bill is Bill. When you see Bill at an event, you want to take him home. I love seeing team members bringing him on their trips and showing off their photos. It makes me smile every time.” ",
-                    "“It’s our job to deliver modern, inclusive and innovative billing and payment products that so many people rely on. But that doesn’t mean that we can’t work with a smile. And yes, that little duck always makes me smile.”"
+                    {
+                        "content": "Bill reminds us that, while the work we do is very serious, we can always have fun. We can deliver for our clients and keep a smile on our face.",
+                        "img": "/img/backgrounds/duckbg1.png"
+                    },
+                    {
+                        "content": "It’s pretty inspiring to see a flock of ducks flying in formation. Bill symbolizes that from our team to our clients, we’re all working together and moving in one direction.",
+                        "img": "/img/backgrounds/duckbg2.png"
+                    },
+                    {
+                        "content": "In an interesting way, I think Bill’s greatest impact lies in humanizing our world. While we may work in a fast-paced, highly technical industry, Bill shows that there will always be a place for meaningful, personal connections.",
+                        "img": "/img/backgrounds/duckbg3.png"
+                    },
+                    {
+                        "content": "Bill is Bill. When you see Bill at an event, you want to take him home. I love seeing team members bringing him on their trips and showing off their photos. It makes me smile every time.",
+                        "img": "/img/backgrounds/duckbg4.png"
+                    },
+                    {
+                        "content": "It’s our job to deliver modern, inclusive and innovative billing and payment products that so many people rely on. But that doesn’t mean that we can’t work with a smile. And yes, that little duck always makes me smile.",
+                        "img": "/img/backgrounds/duckbg5.png"
+                    }
                 ]
             },
         
