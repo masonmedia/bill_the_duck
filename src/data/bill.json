@@ -4,12 +4,13 @@
         },
         "cheers": {
             "title": "Cheers to 20 Years!",
-            "content": "In 2004, an idea was hatched: simplify bill payments for the millions of bill payers throughout North America. To celebrate this idea, Paymentus welcomed someone who knows a thing or two about bills – Bill the Duck. For two decades, Bill has helped our clients keep their customer service afloat, get their ducks in a row and best serve those who have bills. Today, we’re excited to celebrate Bill and all those who have flown with us over these last 20 years. Here’s to greater successes to come!"
+            "content": "In 2004, an idea was hatched: simplify bill payments for the hundreds of millions of bill payers worldwide. To celebrate this idea, Paymentus joined forces with someone who knows a thing or two about bills – <strong>Bill the Duck</strong>. <span class='d-table mt-3'>For two decades, Bill has helped our clients keep their customer service afloat, get their ducks in a row and best serve those who have bills. Today, we’re excited to celebrate Bill and all those who have flown with us over these last 20 amazing years. Here’s to continued innovation and greater successes to come! We are just getting started.</span>"
         },
         "meet_bill": {
             "title": "Meet Bill",
             "content": "You’ve seen him at trade shows, on Instagram and maybe even on a pair of shoes or two. Get to know our fine-feathered friend and learn more about his dedication to making life easier for everyone – and everything – who has bills."
         },
+        "bill_bio_title": "Bill Bits & Fast Facts",
         "bill_bio": 
         [
             {
@@ -19,18 +20,8 @@
             },
             {
                 "title": "Birthday",
-                "content": "February 8, 2004",
+                "content": "January 13, 2003",
                 "icon": "bi-cake2-fill"
-            },
-            {
-                "title": "Lives",
-                "content": "Toronto, Canada (Summer), Charlotte, NC (Winter)",
-                "icon": "bi-pin-map-fill"
-            },
-            {
-                "title": "Hobbies",
-                "content": "Collecting trade show swag; traveling to exotic locations; taking bubble baths; changing colors; helping billers Bill Better!",
-                "icon": "bi-palette"
             },
             {
                 "title": "Favorite Food",
@@ -57,26 +48,26 @@
         "journey": [
             {
                 "title": "The Journey to Becoming Best in Class",
-                "content": "As Paymentus celebrates 20 years, join us in revisiting the milestones of our past that have laid the foundation for our future."
+                "content": "As Paymentus celebrates 20 years, join us in revisiting some of the milestones of our past that have laid the foundation for our future."
             },
             {
                 "title": "Industry Accolades",
-                "content": "Paymentus has earned a host of industry awards and honors, including two Deloitte Canadian Technology Fast 50 Company in Ontario awards. Most recently, the Paymentus EBPP solution earned best-in-class honors from Aite-Novarica.",
+                "content": "Paymentus has earned a host of industry awards and honors, including two Deloitte Technology Fast 50 Company awards. Most recently, the Paymentus EBPP solution earned best-in-class honors from Aite-Novarica.",
                 "img": "/img/icons/icon_best.png"
             },
             {
-                "title": "Class-Leading Partners",
-                "content": "To expand our capabilities and best serve our clients, we’ve partnered with some of the biggest players in the world of payments and retail including PayPal, Amazon and Walmart.",
+                "title": "Premier Partners",
+                "content": "We are honored to have been selected by leading organizations from the world of payments and retail including PayPal, Amazon, Walmart, JP Morgan and many more. We’re excited to build on our collaborative successes and look forward to expanding on these partnerships for decades to come.",
                 "img": "/img/icons/icon_trophy.png"
             },
             {
                 "title": "Strategic Growth",
-                "content": "Paymentus surrounds the world of billing and payment through its strategic acquisitions that have included Tele-Works, Inc. (TWI), Payveris and more. This growth was fueled in part by the investment of  leading financial investment firm Accel-KKR and the company’s 2021 IPO (NYSE: PAY).",
+                "content": "Paymentus is proud to be a publicly traded company on the NYSE (NYSE: PAY). Additionally, the company has completed several strategic acquisitions to bolster our next-generation billing and payment capabilities and expand our footprint in the world of billing and payment.",
                 "img": "/img/icons/icon_nyse.png"
             },
             {
                 "title": "Product Innovations",
-                "content": "The Paymentus product suite gives customers more ways to pay through the introduction of wide-ranging services including the Instant Payment Network®, Secure Service® IVR and SMS, chatbot and more.",
+                "content": "The next-generation, multi-dimensional product suite has been built from the ground up to give clients and customers more ways to view, pay and communicate. The holistic solution transforms billing and payment through patented innovations that include the Paymentus Instant Payment Network® and Secure Service®, as well as intuitive customer engagement portals and much more.",
                 "img": "/img/icons/icon_money.png"
             }
         ],
@@ -87,9 +78,8 @@
         },
         "contest": {
             "title": "Billebration Photo Contest",
-            "content": "If there’s one thing Bill loves it’s taking pictures with his fans (he is on <a class='fw-bold text-green' href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram</a> after all). And now, those photos could win you some great prizes! Send us your photos with Bill and we’ll award our favorites in the following categories: Most Creative, Most Exotic Location, Funniest, Cutest, Most Pet Friendly.<br><br> Contest runs until March 31st. You can enter multiple photos, so send them in! You can also request a special 20th anniversary duck. ",
-            "button": "Enter Now",
-            "button2": "Request a Duck"
+            "content": "If there’s one thing Bill loves it’s taking pictures with his fans (he is on <a class='fw-bold text-green' href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram</a> and an influencer, after all). And now, those photos could win you some great prizes! Send us your photos with Bill and we’ll award our favorites in the following categories: Most Creative, Most Exotic Location, Funniest, Cutest, Most Pet Friendly.<br><br> The contest runs until April 30, 2024. You can enter multiple photos, so send them in! You can also request a special 20th anniversary duck with each submission.",
+            "button": "Enter Now"
         },
         
         "what_bill_means": 
@@ -121,7 +111,7 @@
         
         "ask_bill": {
             "title": "Ask Bill",
-            "content": "After 20 years at the forefront of billing and payments, Bill has learned a thing or two about helping clients <a class='fw-bold text-green' href='https://www.paymentus.com/billbetter/'>Bill Better®</a>. Have a question for Bill or any of our payment experts? Send us an email with a question or topic for a future Bill Better® article and if we use it, you’ll gain some knowledge and a special prize.",
+            "content": "After 20 years of leading the billing and payment flock, Bill has learned a thing or two about helping clients <a class='fw-bold text-green' href='https://www.paymentus.com/billbetter/'>Bill Better®</a>. Have a question for Bill or any of our payment experts? Send us an email with a question or topic for a future Bill Better® article and if we use it, you’ll gain some knowledge and a special prize.",
             "button": "Submit a Topic"
         },
         "follow": {

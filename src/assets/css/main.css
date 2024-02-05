@@ -22,6 +22,10 @@ footer {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
+p {
+  text-wrap: pretty;
+}
+
 p, button, .btn, .nav-link {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
