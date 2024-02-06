@@ -112,7 +112,7 @@
         
         "ask_bill": {
             "title": "Ask Bill",
-            "content": "After 20 years of leading the billing and payment flock, Bill has learned a thing or two about helping clients <a class='fw-bold text-green' href='https://www.paymentus.com/billbetter/'>Bill Better®</a>. Have a question for Bill or any of our payment experts? Send us an email with a question or topic for a future Bill Better® article and if we use it, you’ll gain some knowledge and a special prize.",
+            "content": "After 20 years of leading the billing and payment flock, Bill has learned a thing or two about helping clients <a class='fw-bold text-green' href='https://www.paymentus.com/billbetter/'>Bill Better®</a>. Have a question for Bill or any of our payment experts? Send us an email with a question or topic for a future Bill Better® article and if published, you’ll win a special prize.",
             "button": "Submit a Topic"
         },
         "follow": {
