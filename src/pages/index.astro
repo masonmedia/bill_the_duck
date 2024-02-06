@@ -35,7 +35,7 @@ const apiData = await response.json();
 					<div class="col d-flex flex-column justify-content-center align-items-start">
 						<div class="p-5">
 							<h2 class="display-4 fw-bold text-uppercase mb-3 ">{data.meet_bill.title}</h2>
-							<p class="fs-5">{data.meet_bill.content}</p>
+							<p class="fs-5"><Fragment set:html={data.meet_bill.content}/></p>
 						</div>
 					</div>
 					<div class="col d-flex justify-content-center align-items-center">
@@ -128,7 +128,7 @@ const apiData = await response.json();
 						<div id="contest" class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center bg-primary min-vh-50 rounded-4 p-5 position-relative z-0" style="z-index: 100; --bs-bg-opacity: .7;">
 							<h2 class="display-4 fw-bold text-uppercase mb-3">{data.contest.title}</h2>
 							<p class="fs-5"><Fragment set:html={data.contest.content} /></p>
-							<a href="mailto:marketing@paymentus.com?subject=20th Anniversary Duck Request">
+							<a href="mailto:marketing@paymentus.com?subject=Bill the Duck Photo Contest">
 								<button class="btn btn-magenta me-2 shadow">{data.contest.button}</button>
 							</a>
 						</div>

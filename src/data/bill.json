@@ -8,7 +8,7 @@
         },
         "meet_bill": {
             "title": "Meet Bill",
-            "content": "You’ve seen him at trade shows, on Instagram and maybe even on a pair of shoes or two. Get to know our fine-feathered friend and learn more about his dedication to making life easier for everyone – and everything – who has bills."
+            "content": "You’ve seen him at <a class='text-green fw-bold' href='https://www.instagram.com/p/CpnH9s3rnvQ/?igsh=MWNxbWJqM2ttYWE4aA%3D%3D' target='_blank'>trade shows</a>, on Instagram and maybe even on a <a class='text-green fw-bold' href='https://www.linkedin.com/posts/paymentus_billbetter-activity-7155575601892921344-Uh9b?utm_source=share&utm_medium=member_desktop' target='_blank'>pair of shoes</a> or two. Get to know our fine-feathered friend and learn more about his dedication to making life easier for everyone – and everything – who has bills."
         },
         "bill_bio_title": "Bill Bits & Fast Facts",
         "bill_bio_intro": "Bill's no ordinary waterfowl. He's a Renaissance duck, flying to the beat of his own drum and going where the breeze takes him (usually to a trade show). Get a little inside info on Bill and see why he's a fan favorite wherever he lands.",
@@ -41,7 +41,7 @@
             },   
             {
                 "title": "Favorite Quote",
-                "content": "'Happiness is the richest thing we will ever own.' <em>— Donald Duck</em>",
+                "content": "‶Happiness is the richest thing we will ever own.″ <em>— Donald Duck</em>",
                 "icon": "bi-quote"
             }
             
@@ -68,7 +68,7 @@
             },
             {
                 "title": "Product Innovations",
-                "content": "Our next-generation, multi-dimensional product suite has been built from the ground up to give clients and customers more ways to view, pay and communicate. The holistic solution transforms billing and payment through patented innovations that include the Paymentus Instant Payment Network® and Secure Service®, as well as intuitive customer engagement portals and much more.",
+                "content": "The next-generation, multi-dimensional product suite provides more ways to communicate, view bills and make payments. The holistic solution transforms billing and payment through patented innovations including the Paymentus Instant Payment Network®, Secure Service® and much more.",
                 "img": "/img/icons/icon_money.png"
             }
         ],
@@ -79,7 +79,7 @@
         },
         "contest": {
             "title": "Billebration Photo Contest",
-            "content": "If there’s one thing Bill loves it’s taking pictures with his fans (he is on <a class='fw-bold text-green' href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram</a> and an influencer, after all). And now, those photos could win you some great prizes! Send us your photos with Bill and we’ll award our favorites in the following categories: Most Creative, Most Exotic Location, Funniest, Cutest, Most Pet Friendly, Best Group/Team.<br><br> The contest runs until April 30, 2024. You can enter multiple photos, so send them in! You can also request a special 20th anniversary duck with each submission.",
+            "content": "If there’s one thing Bill loves it’s taking pictures with his fans (he is on <a class='fw-bold text-green' href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram</a> and an influencer, after all). And now, those photos could win you some great prizes! Send us your photos with Bill and we’ll award our favorites in the following categories: Most Creative, Most Exotic Location, Funniest, Cutest, Most Pet-Friendly, Best Group/Team.<br><br> The contest runs until April 30, 2024. You can enter multiple photos, so send them in! You can also request a special 20th anniversary duck with each submission.",
             "button": "Enter Now"
         },
         
