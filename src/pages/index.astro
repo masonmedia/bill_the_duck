@@ -30,8 +30,8 @@ const ducks = await Astro.glob("../assets/images/icons/*");
 					</div>
 				</div>
 
-				<div class="row row-cols-1 row-cols-lg-2 p-5">
-					<div class="col d-flex flex-column justify-content-center align-items-start">
+				<div class="row row-cols-1 row-cols-lg-2 py-5">
+					<div class="col d-flex flex-column justify-content-center align-items-center text-center text-lg-start align-items-lg-start">
 						<div class="p-5">
 							<h2 class="display-4 fw-bold text-uppercase mb-3 ">{data.meet_bill.title}</h2>
 							<p class="fs-5"><Fragment set:html={data.meet_bill.content}/></p>
@@ -43,19 +43,20 @@ const ducks = await Astro.glob("../assets/images/icons/*");
 				</div>
 
 				<div class="row pb-3">
-					<div class="col-lg-7 mx-auto text-center">
+					<div class="col-lg-7 mx-auto text-center px-5">
 						<img src="/img/icons/rubber-duck.svg" class="h-auto rounded-4" style="width: 70px; filter: brightness(0) invert(1);" alt="">
 						<h2 class="display-4 fw-bold text-uppercase my-3">{data.bill_bio_title}</h2>
 						<p class="fw-light fs-5">{data.bill_bio_intro}</p>
 					</div>
 				</div>
 
-				<div class="row row-cols-1 row-cols-lg-2 g-3">
+				<div class="row row-cols-1 row-cols-lg-2 g-2">
 					<div class="col">
-						<div class="p-4">
+						<div class="px-4 pb-0">
 							{
-								data.bill_bio.slice(0,3).map((item) => (
-								<div class="d-flex bg-purple-gradient rounded-4 p-3 mb-2">
+								data.bill_bio.slice(0,3).map((item, index) => (
+								<div class:list={["d-flex bg-purple-gradient rounded-4 p-3", index === 2 ? 'mb-0' : 'mb-2']}>
+
 									<div class="flex-shrink-0 d-flex justify-content-center align-items-center bg-purple rounded-3">
 										<i class:list={["bi fs-1 py-2 px-3", item.icon]}></i>
 									</div>
@@ -69,7 +70,7 @@ const ducks = await Astro.glob("../assets/images/icons/*");
 						</div>
 					</div>
 					<div class="col">
-						<div class="p-4">
+						<div class="px-4">
 								{
 									data.bill_bio.slice(3,7).map((item) => (
 									<div class="d-flex bg-purple-gradient rounded-4 p-3 mb-2">
@@ -137,7 +138,7 @@ const ducks = await Astro.glob("../assets/images/icons/*");
 
 					<!-- what bill means -->
 
-					<div class="row g-5 p-5">
+					<div class="row g-3 p-5">
 						<div class="col-lg-12 text-center">
 							<h2 class="display-4 fw-bold text-uppercase">{data.what_bill_means.title}</h2>
 						</div>
@@ -174,10 +175,10 @@ const ducks = await Astro.glob("../assets/images/icons/*");
 						</div>
 					</div>
 
-					<div class="row p-4">
+					<div class="row">
 						<div class="col-lg-8 offset-lg-2 text-center p-5">
 							<h2 class="display-4 fw-bold text-uppercase">{data.follow.title}</h2>
-							<p class="fs-5"><Fragment set:html={data.follow.content} /></p>
+							<p class="fs-5 col-md-8 mx-auto"><Fragment set:html={data.follow.content} /></p>
 						</div>
 					</div>
 
