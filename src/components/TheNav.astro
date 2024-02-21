@@ -1,35 +1,65 @@
 ---
 // import { ViewTransitions } from 'astro:transitions'
-import OffcanvasNav from './OffcanvasNav.astro';
-import { Image } from 'astro:assets';
+import OffcanvasNav from "./OffcanvasNav.astro";
+import { Image } from "astro:assets";
 import paymentusLogo from "../assets/images/logos/paymentus-logo.svg";
-import navData from '../data/nav.json';
+import navData from "../data/nav.json";
 ---
 
 <header>
-	<nav class="navbar navbar-expand-lg bg-purple-dark text-light fixed-top" style="padding: 10px">
-		<div class="container-fluid">
-		<a class="navbar-brand" href="https://paymentus.com">
-            <Image style="height: auto; width: 120px;" class="me-3" src={paymentusLogo} alt=""/>
-        </a>
-		  <button class="navbar-toggler text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <i class="bi bi-justify fs-2"></i>
-		  </button>
-		  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-			<div class="offcanvas-header">
-			  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Paymentus</h5>
-			  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-			</div>
-			<div class="offcanvas-body bg-midnight-blue">
-			  <ul class="navbar-nav bg-purple-dark justify-content-start flex-grow-1 pe-3">
-				<li class="nav-item">
-                    <a class="nav-link fw-bold" role="button" href="https://paymentus.com">Return Home
-                    </a>
-                    <!-- <a class="nav-link dropdown-toggle fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu1" aria-controls="offcanvasTop">Return home
+  <nav
+    class="navbar navbar-expand-lg bg-purple-dark text-light fixed-top"
+    style="padding: 10px"
+    data-aos="fade-down">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://paymentus.com">
+        <Image
+          style="height: auto; width: 120px;"
+          class="me-3"
+          src={paymentusLogo}
+          alt=""
+        />
+      </a>
+      <button
+        class="navbar-toggler text-light"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"
+      >
+        <i class="bi bi-justify fs-2"></i>
+      </button>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Paymentus</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bg-midnight-blue">
+          <ul
+            class="navbar-nav bg-purple-dark justify-content-start flex-grow-1 pe-3"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link fw-bold"
+                role="button"
+                href="https://paymentus.com"
+                >Return Home
+              </a>
+              <!-- <a class="nav-link dropdown-toggle fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu1" aria-controls="offcanvasTop">Return home
                     </a> -->
-                  </li>
+            </li>
 
-				<!-- <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
                      <a class="nav-link fw-bold" type="button">Solutions
                     </a>
                      <a class="nav-link dropdown-toggle fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu2" aria-controls="offcanvasTop">Solutions
@@ -74,65 +104,72 @@ import navData from '../data/nav.json';
 					<li><a class="dropdown-item" href="#">Something else here</a></li>
 				  </ul>
 				</li> -->
-			  </ul>
+          </ul>
 
-                <a href="https://www.paymentus.com/lets-talk/">
-                <button class="btn btn-magenta" type="button">Let's Talk</button>
-                </a>
-			</div>
-		  </div>
-		</div>
-	  </nav>
-            <OffcanvasNav offcanvasId="menu1">
-                <div class="col-lg-8 d-flex px-5">
-                    <div class="row">
-                        {
-                            navData.nav.who_we_serve.billing_payments.sections.map((item) => (
-                                <div class="col-lg-4 d-flex flex-column justify-content-end align-items-start p-3">
-                                    <h4>{'heading' in item ? item.heading : ''}</h4>
-                                    <h5>{item.title}</h5>
-                                    <h6 class="">{item.content}</h6>
-                                </div>
-                            ))
-                        }
-                    </div>
-                </div>
-                <div class="col-lg-4 bg-logo-blue d-flex flex-column justify-content-center align-items-start min-vh-100 p-0">
-                    <div class="p-5">
-                        <h4 class="fw-bold">{navData.nav.who_we_serve.billing_payments.article.title}</h4>
-                        <p class="small">{navData.nav.who_we_serve.billing_payments.article.title}</p>
-                        <a href={navData.nav.who_we_serve.billing_payments.article.link}>{navData.nav.who_we_serve.billing_payments.article.cta} ></a>
-                    </div>
-                </div>
-                <!-- <div slot="menu-articles">
+          <a href="https://www.paymentus.com/lets-talk/">
+            <button class="btn btn-magenta" type="button">Let's Talk</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <OffcanvasNav offcanvasId="menu1">
+    <div class="col-lg-8 d-flex px-5">
+      <div class="row">
+        {
+          navData.nav.who_we_serve.billing_payments.sections.map((item) => (
+            <div class="col-lg-4 d-flex flex-column justify-content-end align-items-start p-3">
+              <h4>{"heading" in item ? item.heading : ""}</h4>
+              <h5>{item.title}</h5>
+              <h6 class="">{item.content}</h6>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div
+      class="col-lg-4 bg-logo-blue d-flex flex-column justify-content-center align-items-start min-vh-100 p-0"
+    >
+      <div class="p-5">
+        <h4 class="fw-bold">
+          {navData.nav.who_we_serve.billing_payments.article.title}
+        </h4>
+        <p class="small">
+          {navData.nav.who_we_serve.billing_payments.article.title}
+        </p>
+        <a href={navData.nav.who_we_serve.billing_payments.article.link}
+          >{navData.nav.who_we_serve.billing_payments.article.cta} ></a
+        >
+      </div>
+    </div>
+    <!-- <div slot="menu-articles">
                     <h4 class="fw-bold">{navData.nav.who_we_serve.billing_payments.article.title}</h4>
                     <p class="small">{navData.nav.who_we_serve.billing_payments.article.title}</p>
                     <a href={navData.nav.who_we_serve.billing_payments.article.link}>{navData.nav.who_we_serve.billing_payments.article.cta} ></a>
                 </div> -->
-            </OffcanvasNav>
-
-</div>
+  </OffcanvasNav>
 </header>
-<style>
-    .offcanvas-backdrop.show {
-    opacity: 1 !important;
-}   
-.offcanvas-backdrop.fade {
-    opacity: 0;
-} 
 
-a, a .nav-link {
+<style>
+  .offcanvas-backdrop.show {
+    opacity: 1 !important;
+  }
+  .offcanvas-backdrop.fade {
+    opacity: 0;
+  }
+
+  a,
+  a .nav-link {
     font-weight: bold;
     text-decoration: none;
     color: #fff;
-}
-.navbar-expand-lg .navbar-nav .nav-link:hover {
-    color: #2364F6;
-}
+  }
+  .navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #2364f6;
+  }
 
-a:hover, 
-.nav-link:hover {
-    color: #2364F6;
-}
-
+  a:hover,
+  .nav-link:hover {
+    color: #2364f6;
+  }
 </style>
