@@ -24,29 +24,33 @@ const ducks = await Astro.glob("../assets/images/icons/*");
 				<TheHero />
 				<div class="row">
 					<div class="col-lg-8 offset-lg-2 text-center p-5">
-						<img class="mb-2" style="width: 40%; filter: drop-shadow(2px 4px 6px black);" src="/img/icons/badge.png" alt="">
-						<h2 class="display-4 fw-bold text-uppercase my-3">{data.cheers.title}</h2>
-						<p class="fs-5"><Fragment set:html={data.cheers.content} /></p>
+						<img class="mb-2" data-aos="fade-up" style="width: 40%; filter: drop-shadow(2px 4px 6px black);" src="/img/icons/badge.png" alt="">
+						<h2 data-aos="fade-up" data-aos-delay="200" class="display-4 fw-bold text-uppercase my-3">{data.cheers.title}</h2>
+						<p class="fs-5" data-aos="fade-up" data-aos-delay="400"><Fragment set:html={data.cheers.content} /></p>
 					</div>
 				</div>
 
 				<div class="row row-cols-1 row-cols-lg-2 py-5">
 					<div class="col d-flex flex-column justify-content-center align-items-center text-center text-lg-start align-items-lg-start">
 						<div class="p-5">
-							<h2 class="display-4 fw-bold text-uppercase mb-3 ">{data.meet_bill.title}</h2>
-							<p class="fs-5"><Fragment set:html={data.meet_bill.content}/></p>
+							<h2 class="display-4 fw-bold text-uppercase mb-3" data-aos="fade-up">{data.meet_bill.title}</h2>
+							<p class="fs-5" data-aos="fade-up" data-aos-delay="200"><Fragment set:html={data.meet_bill.content}/></p>
 						</div>
 					</div>
 					<div class="col d-flex justify-content-center align-items-center">
-						<img src="/img/blue_duck.png" class="w-100" alt="">
+						<img data-aos="fade-up" data-aos-delay="400" src="/img/blue_duck.png" class="w-100" alt="">
 					</div>
 				</div>
 
 				<div class="row pb-3">
 					<div class="col-lg-7 mx-auto text-center px-5">
-						<img src="/img/icons/rubber-duck.svg" class="h-auto rounded-4" style="width: 70px; filter: brightness(0) invert(1);" alt="">
-						<h2 class="display-4 fw-bold text-uppercase my-3">{data.bill_bio_title}</h2>
-						<p class="fw-light fs-5">{data.bill_bio_intro}</p>
+						<img src="/img/icons/rubber-duck.svg" 
+						class="h-auto rounded-4" style="width: 70px; filter: brightness(0) invert(1);" 
+						alt=""
+						data-aos="fade-up">
+						<h2 class="display-4 fw-bold text-uppercase my-3"
+						data-aos="fade-up" data-aos-delay="200">{data.bill_bio_title}</h2>
+						<p class="fw-light fs-5" data-aos="fade-up" data-aos-delay="400">{data.bill_bio_intro}</p>
 					</div>
 				</div>
 
@@ -55,8 +59,9 @@ const ducks = await Astro.glob("../assets/images/icons/*");
 						<div class="px-4 pb-0">
 							{
 								data.bill_bio.slice(0,3).map((item, index) => (
-								<div class:list={["d-flex bg-purple-gradient rounded-4 p-3", index === 2 ? 'mb-0' : 'mb-2']}>
-
+								<div class:list={["d-flex bg-purple-gradient rounded-4 p-3", index === 2 ? 'mb-0' : 'mb-2']} 
+								data-aos="fade-up" 
+								data-aos-delay={index * 200}>
 									<div class="flex-shrink-0 d-flex justify-content-center align-items-center bg-purple rounded-3">
 										<i class:list={["bi fs-1 py-2 px-3", item.icon]}></i>
 									</div>
@@ -72,8 +77,9 @@ const ducks = await Astro.glob("../assets/images/icons/*");
 					<div class="col">
 						<div class="px-4">
 								{
-									data.bill_bio.slice(3,7).map((item) => (
-									<div class="d-flex bg-purple-gradient rounded-4 p-3 mb-2">
+									data.bill_bio.slice(3,7).map((item, index) => (
+									<div class="d-flex bg-purple-gradient rounded-4 p-3 mb-2" data-aos="fade-up"
+									data-aos-delay={index * 300}>
 										<div class="flex-shrink-0 d-flex justify-content-center align-items-center bg-purple rounded-3">
 											<i class:list={["bi fs-1 py-2 px-3", item.icon]}></i>
 										</div>
@@ -90,15 +96,16 @@ const ducks = await Astro.glob("../assets/images/icons/*");
 	
 					<div class="row p-4">
 						<div class="col-lg-8 offset-lg-2 text-center p-5">
-							<h2 class="display-4 fw-bold text-uppercase">
+							<h2 class="display-4 fw-bold text-uppercase" style="text-wrap: balance;" data-aos="fade-up">
 								{data.journey[0].title}
 							</h2>
-							<p class="fs-5">{data.journey[0].content}</p>
+							<p class="fs-5 col-lg-8 offset-lg-2" data-aos="fade-up" data-aos-delay="200">{data.journey[0].content}</p>
 						</div>
 						{
-							data.journey.slice(1,5).map((item) => (
+							data.journey.slice(1,5).map((item, index) => (
 								<div class="col-lg-3 col-md-6 text-dark p-2">
-									<div class="card bg-midnight-blue text-light rounded-4" aria-hidden="true" style="min-height: 550px">
+									<div class="card bg-midnight-blue text-light rounded-4" aria-hidden="true" style="min-height: 550px" data-aos="fade-up"
+									data-aos-delay={index * 200}>
 										<img src={item.img} class="card-img-top w-100 p-3" alt={item.title}>
 										<div class="card-body">
 											<h4 class="card-title fw-bold text-uppercase">{item.title}</h4>
@@ -113,7 +120,7 @@ const ducks = await Astro.glob("../assets/images/icons/*");
 					<!-- bill collage -->
 
 					<div class="row pb-5">
-						<div class="col-lg-12 min-vh-50 d-flex align-items-center justify-content-center py-5">
+						<div class="col-lg-12 min-vh-50 d-flex align-items-center justify-content-center py-5" data-aos="fade">
 							<img src="/img/backgrounds/duck_collage_board.png" class="w-100" alt="">
 						</div>
 						<div id="request-a-duck"></div>
@@ -123,12 +130,15 @@ const ducks = await Astro.glob("../assets/images/icons/*");
 
 
 					<div class="row position-relative min-vh-50 p-5">
-						<img class="d-none d-lg-block position-absolute z-0 top-50 start-50 translate-middle w-75" src="/img/confetti.png" alt="Confetti image">
-						<img class="d-block d-lg-none position-absolute z-0 top-50 start-50 translate-middle w-100" src="/img/confetti.png" alt="">
-						<div id="contest" class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center bg-primary min-vh-50 rounded-4 p-5 position-relative z-0" style="z-index: 100; --bs-bg-opacity: .7;">
-							<h2 class="display-4 fw-bold text-uppercase mb-3">{data.contest.title}</h2>
-							<p class="fs-5"><Fragment set:html={data.contest.content} /></p>
-							<a href="mailto:marketing@paymentus.com?subject=Bill the Duck Photo Contest">
+						<img class="d-none d-lg-block position-absolute z-0 top-50 start-50 translate-middle w-75" src="/img/confetti.png" alt="Confetti image"
+						data-aos="fade">
+						<img class="d-block d-lg-none position-absolute z-0 top-50 start-50 translate-middle w-100" src="/img/confetti.png" alt=""
+						data-aos="fade">
+						<div id="contest" class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center bg-primary min-vh-50 rounded-4 p-5 position-relative z-0" style="z-index: 100; --bs-bg-opacity: .7;" data-aos="fade">
+							<h2 class="display-4 fw-bold text-uppercase mb-3"
+							data-aos="fade-up">{data.contest.title}</h2>
+							<p class="fs-5" data-aos="fade-up" data-aos-delay="200"><Fragment set:html={data.contest.content} /></p>
+							<a href="mailto:marketing@paymentus.com?subject=Bill the Duck Photo Contest" data-aos="fade-up" data-aos-delay="400">
 								<button class="btn btn-magenta me-2 shadow">{data.contest.button}</button>
 							</a>
 						</div>
@@ -139,16 +149,13 @@ const ducks = await Astro.glob("../assets/images/icons/*");
 					<!-- what bill means -->
 
 					<div class="row g-3 p-5">
-						<div class="col-lg-12 text-center">
+						<div class="col-lg-12 text-center py-4" data-aos="fade-up">
 							<h2 class="display-4 fw-bold text-uppercase">{data.what_bill_means.title}</h2>
 						</div>
 						{ 
-							data.what_bill_means.quotes.map((item) => (
-							<div class="col-md-6 col-lg-4 flex-fill">
-								
-								
+							data.what_bill_means.quotes.map((item, index) => (
+							<div class="col-md-6 col-lg-4 flex-fill" data-aos="fade-up" data-aos-delay={index * 200}>
 								<div class="p-5 d-flex align-items-center justify-content-center text-start text-light position-relative" style="min-height: 350px">
-			
 									<i class="bi bi-quote position-absolute start-0 z-1" style="top: -20%; font-size: 100px"></i>
 									<img src={item.img} class="position-absolute top-0 start-0 z-0 w-100 h-100 rounded-5" style="object-fit: cover; aspect-ratio: 16/9; filter: brightness(50%)" alt="">
 									<p class="position-relative z-1">{item.content}</p>
@@ -163,26 +170,26 @@ const ducks = await Astro.glob("../assets/images/icons/*");
 					<div class="row row-cols-1 row-cols-lg-2 g-4 p-4">
 						<div class="col d-flex flex-column justify-content-center align-items-start text-center text-lg-start">
 							<div class="p-3">
-								<h2 class="display-4 fw-bold text-uppercase">{data.ask_bill.title}</h2>
-								<p class="fs-5"><Fragment set:html={data.ask_bill.content} /></p>
+								<h2 class="display-4 fw-bold text-uppercase" data-aos="fade-up">{data.ask_bill.title}</h2>
+								<p class="fs-5" data-aos="fade-up" data-aos-delay="200"><Fragment set:html={data.ask_bill.content} /></p>
 								<a href="mailto:marketing@paymentus.com?subject=Bill Better Topic">
-									<button class="btn btn-primary">{data.ask_bill.button}</button>
+									<button class="btn btn-primary" data-aos="fade-up" data-aos-delay="400">{data.ask_bill.button}</button>
 								</a>
 							</div>
 						</div>
 						<div class="col d-flex flex-column justify-content-center align-items-center min-vh-500">
-							<img src="/img/bill_better.png" class="w-100" alt="Paymentus Bill Better">	
+							<img data-aos="fade-up" data-aos-delay="600" src="/img/bill_better.png" class="w-100" alt="Paymentus Bill Better">	
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="col-lg-8 offset-lg-2 text-center p-5">
-							<h2 class="display-4 fw-bold text-uppercase">{data.follow.title}</h2>
-							<p class="fs-5 col-md-8 mx-auto"><Fragment set:html={data.follow.content} /></p>
+							<h2 class="display-4 fw-bold text-uppercase" data-aos="fade-up">{data.follow.title}</h2>
+							<p class="fs-5 col-md-8 mx-auto" data-aos="fade-up" data-aos-delay="200"><Fragment set:html={data.follow.content} /></p>
 						</div>
 					</div>
 
-					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 px-4">
+					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 px-4" data-aos="fade-up">
 						<div class="col">
 							<Post1 />
 						</div>
