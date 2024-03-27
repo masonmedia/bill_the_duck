@@ -1,0 +1,360 @@
+---
+
+import Layout from '../layouts/MainLayout.astro';
+---
+
+<style>
+    .grid-1 {
+        display: grid;;
+      margin: 0 auto;
+      grid-template-columns: 1fr;
+    }
+    .grid-2 {
+        display: grid;;
+      margin: 0 auto;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
+    .grid-4 {
+        display: grid;
+      margin: 0 auto;
+      padding: 20px;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .fs-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .body-img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 23px;
+    }
+    .headline-1 {
+        font-size: 9.5vw;
+        /* font-size: 110px; */
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 90%;
+        letter-spacing: -2px;
+    }
+    .headline-2 {
+        font-size: 10vmin; 
+        font-weight: bold; 
+        text-transform: uppercase; 
+        line-height: 90%
+    }
+    .rounded {
+        border-radius: 23px;
+    }
+    .position-relative {
+        position: relative;
+    }
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        gap: 20px;
+     }
+
+.flex-item {
+  flex: 1 0 400px;
+  /* min-height: 120px; */
+  box-sizing: border-box;
+  margin: 0 5px 5px;
+  padding: 50px;
+  justify-content: space-between;
+  text-align: center;
+
+}
+    .flex-left-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        text-align: left;
+    }
+    .flex-left-start {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        text-align: left;
+    }
+    .flex-left-end {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+        text-align: left;
+    }
+    p {
+        text-wrap: balance;
+    }
+    .btn-gradient {
+    background: linear-gradient(105deg, #7B53F5, #2364F6, #56C3FF);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px 20px;
+}
+  .card {
+    /* filter: drop-shadow(3px 5px 7px #000);  */
+    border: none;
+    border-radius: 23px;
+  }
+  img.icon {
+    /* border: 1px solid blue; */
+    border-radius: 23px;
+    background: #173678;
+    padding: 30px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #000;
+  }
+  .text-grey {
+    color: #86868b;
+}
+  .text-light {
+    color: #ffffff;
+}
+.bg-ice {
+    background: #DCF1FF
+}
+.font-sans {
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+.min-vh-500 {
+    min-height: 500px;
+}
+
+#checkbox1,
+#checkbox2,
+#checkbox3,
+#checkbox4 {
+  display: none;
+}
+
+#checkbox1:checked~#email1,
+#checkbox2:checked~#email2,
+#checkbox3:checked~#email3,
+#checkbox4:checked~#email4 {
+  display: block;
+  animation: fade-in .6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+#email1,
+#email2,
+#email3,
+#email4 {
+  display: none;
+}
+    </style>
+
+<Layout title="Paymentus 20th Anniversary Home" description="Big time.">
+    <div style="background: #ffffff;">
+        <div class="flex-container position-relative" style="min-height: 100vh;">
+            <img style="position: absolute; z-index: 0; top: 0; right: 0; width: 150%; height: 150%; object-fit: cover; z-index: 0; filter: grayscale(100%) brightness(150%)" src="https://images.unsplash.com/photo-1615209853186-e4bd66602508?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" data-aos="fade" data-aos-duration="2000">
+            <div class="flex-item position-relative" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <h4 class="text-grey" data-aos="fade-up">UTILITIES</h4>
+                <div style="padding: 0 5vmin;">
+                    <h1 class="headline-1" data-aos="fade-up" data-aos-delay="200">Best-In-Class Billing & Payments For Utilities</h1>
+                    <h3 class="text-grey" style="font-weight: light; text-transform: uppercase; margin: 20px 0; padding: 0 10vw;" data-aos="fade-up" data-aos-delay="400">See how the holistic Paymentus solution can transform your billing and payment capabilities. </h3>
+                    <button style="margin-top: 15px; font-weight: bold; text-transform: uppercase; padding: 10px 17px; border-radius: 11px" class="btn btn-dark font-sans" data-aos="fade-up" data-aos-delay="600">Request a Demo</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid-2 position-relative" style="min-height: 100vh;">
+            <img src="https://images.unsplash.com/photo-1554232694-333ae67b2252?q=80&w=2765&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="position: absolute; z-index: 0; top: 0; right: 0; width: 100%; height: 100%; object-fit: cover" alt="">
+            <div class="position-relative" style="display: flex; flex-direction: column; justify-content: center; align-items: start; color: #222222; padding: 10vmin">
+                <h1 class="headline-2" data-aos="fade-up">Ranked <span class="text-grey">highest </span>overall</h1>
+                <p class="text-grey font-sans" style="font-weight: 600; font-size: 24px; line-height: 1.2858342857; margin: 10px 0" data-aos="fade-up" data-aos-delay="200">In a direct comparison against leading electronic bill presentment and payment (EBPP) providers, Paymentus received top scores for product features and client service. See why the best-in-class Paymentus billing and payment solution is perfect for utilities looking to deliver more at reduced cost.
+                </p>
+            </div>
+            <div class=""></div>
+            <!-- <div style="display: flex; flex-direction: column; justify-content: center;
+            align-items: center; color: #fff;">
+                <img class="w-100" style="" src="https://astroship-pro.web3templates.com/_astro/hero-screenshot.HaV5_ts2_ZE0EX9.avif" alt="">
+            </div> -->
+        </div>
+
+        <div class="grid-2 position-relative text-light" style="min-height: 100vh;">
+            <img src="https://images.unsplash.com/photo-1533134755454-9549758f0e06?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="position: absolute; z-index: 0; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover" alt="" data-aos="fade" data-aos-duration="1000">
+            <div class=""></div>
+            <div class="position-relative" style="display: flex; flex-direction: column; justify-content: center; align-items: start; padding: 10vmin">
+                <h1 class="headline-2" data-aos="fade-up" data-aos-delay="200">Meeting Today’s <span class="text-grey">Most Vital</span> Billing & Payment Needs</h1>
+                <p class="font-sans" style="font-weight: 600; font-size: 24px;
+                line-height: 1.2858342857; margin: 10px 0" data-aos="fade-up" data-aos-delay="400">Today’s customers expect more. Overdeliver with a solution built from the ground up to offer more ways to pay and get paid than any other provider. No added gateways, expensive contracts or additional vendors to manage. Just a holistic solution through a single provider that offers real-time visibility over every transaction.
+                </p>
+            </div>
+        </div>
+
+    <div class="grid-2" style="padding: 50px 30px 0">
+        <div id="checkbox1Card" class="flex-item flex-left-start card position-relative" style="min-height: 450px; background: #222222; color: #fff">
+            <h1 style="font-weight: bold; font-size: 50px">INTEGRATION FLEXIBILITY</h1>
+            <label for="checkbox1" class="btn" style="position: absolute; bottom: 10px; right: 10px; z-index: 100; width: 100%; height: 100%">
+                <svg style="position: absolute; bottom: 10px; right: 10px; z-index: 100;" xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="#a467c6" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                  </svg>
+            </label>
+            <input type="checkbox" id="checkbox1" role="button">
+            
+            <div id="email1" style="position: absolute; top: 0; left: 0; width: 100%;">
+                <div class="card" style="border: 1px solid lightgrey;">
+                    <div style="text-align: left; padding: 50px 30px 30px; min-height: 450px">
+                        <p class="text-grey font-sans" style="font-weight: 600; font-size: 24px; line-height: 1.2858342857; margin: 10px 0">Through APIs, iFrames, fully hosted options and even a self-onboarding developer portal, we can integrate in ways that best meet your needs, not vice versa. Plus, we have experience with over 400+ partner integrations with industry-leading core systems, including accounting and ERP systems to ensure payments run seamlessly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-item flex-left-start card position-relative" style="min-height: 450px; background: url('/img/backgrounds/phones_1.webp') center; background-size: cover;">
+            <h1 style="font-weight: bold; font-size: 50px">MORE WAYS TO PAY</h1>
+            <label for="checkbox2" class="btn" style="position: absolute; bottom: 10px; right: 10px; z-index: 100; width: 100%; height: 100%">
+                <svg style="position: absolute; bottom: 10px; right: 10px; z-index: 100;" xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="#a467c6" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                  </svg>
+            </label>
+            <input type="checkbox" id="checkbox2" role="button">
+            
+            <div id="email2" style="position: absolute; top: 0; left: 0; width: 100%;">
+                <div class="card flex-center-left" style="border: 1px solid lightgrey;">
+                    <div style="text-align: left; padding: 50px 30px 30px; min-height: 450px">
+                        <p class="text-grey font-sans" style="font-weight: 600; font-size: 24px; line-height: 1.2858342857; margin: 10px 0">Gain more customer payment methods and channels, all through a single solution that requires no added vendors or gateways. From digital wallets to in-store cash at thousands of retail locations, customers can self-serve through web, text, chatbot, IVR and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-item flex-left-start card position-relative" style="min-height: 450px; background: url('/img/backgrounds/phones_3.jpeg') center; background-size: cover;">
+            <h1 style="font-weight: bold; font-size: 50px">REAL-TIME REPORTING</h1>
+            <label for="checkbox3" class="btn" style="position: absolute; bottom: 10px; right: 10px; z-index: 100; width: 100%; height: 100%">
+                <svg style="position: absolute; bottom: 10px; right: 10px; z-index: 100;" xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="#a467c6" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                  </svg>
+            </label>
+            <input type="checkbox" id="checkbox3" role="button">
+            
+            <div id="email3" style="position: absolute; top: 0; left: 0; width: 100%;">
+                <div class="card flex-center-left" style="border: 1px solid lightgrey;">
+                    <div style="text-align: left; padding: 50px 30px 30px; min-height: 450px;">
+                        <p class="text-grey font-sans" style="font-weight: 600; font-size: 24px; line-height: 1.2858342857; margin: 10px 0">Combine more payment channels with complete real-time visibility. Give your team the power to track every payment in real time, regardless of method and channel, streamlining reconciliation like never before.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-item flex-left-start card position-relative" style="min-height: 450px; background: #222222; color: #fff">
+            <h1 style="font-weight: bold; font-size: 50px">HOLISTIC PLATFORM</h1>
+            <label for="checkbox4" class="btn" style="position: absolute; bottom: 10px; right: 10px; z-index: 100; width: 100%; height: 100%">
+                <svg style="position: absolute; bottom: 10px; right: 10px; z-index: 100;" xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="#a467c6" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                  </svg>
+            </label>
+            <input type="checkbox" id="checkbox4" role="button">
+            
+            <div id="email4" style="position: absolute; top: 0; left: 0; width: 100%;">
+                <div class="card" style="border: 1px solid lightgrey;">
+                    <div style="text-align: left; padding: 50px 30px 30px; min-height: 450px">
+                        <p class="text-grey font-sans" style="font-weight: 600; font-size: 24px; line-height: 1.2858342857; margin: 10px 0">Enjoy the benefits of end-to-end billing and payment capabilities without the need for additional vendors or gateways. Your customers get their favorite ways to pay and a consistent billing experience, while your organization gains a proven partner for all things billing and payment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center; padding: 10vmin 0 10vmin">
+        <h1 style="padding: 0 10vw 30px; font-size: 10vmin; font-weight: bold; text-transform: uppercase; line-height: 90%">Why More Billers Throughout the U.S. and Canada Are Making the Move to <span class="text-grey">Paymentus </span></h1>
+
+        <div class="grid-4" style="">
+            <div class="flex-item" style="border-radius: 23px; box-shadow: rgba(0, 0, 0, 0.09) 2px 4px 12px 0px; background: rgba(0,0,0,0.03)">
+                <h2 class="font-sans"  style="font-size: 80px; font-weight: bold; color: #a467c6">1</h2>
+                <p class="text-grey font-sans" style="font-weight: 600; font-size: 24px; line-height: 1.2858342857; margin: 10px 0">unified platform serving the entire billing & payment ecosystem</p>
+            </div>
+            <div class="flex-item" style="border-radius: 23px; box-shadow: rgba(0, 0, 0, 0.09) 2px 4px 12px 0px; background: rgba(0,0,0,0.03)">
+                <h2 class="font-sans"  style="font-size: 80px; font-weight: bold; color: #a467c6">34</h2>
+                <p class="text-grey font-sans" style="font-weight: 600; font-size: 24px; line-height: 1.2858342857; margin: 10px 0">million consumers and businesses globally used our platform in December 2023</p>
+            </div>
+            <div class="flex-item" style="border-radius: 23px; box-shadow: rgba(0, 0, 0, 0.09) 2px 4px 12px 0px; background: rgba(0,0,0,0.03)">
+                <h2 class="font-sans" style="font-size: 80px; font-weight: bold; color: #a467c6">30</h2>
+                <p class="text-grey font-sans" style="font-weight: 600; font-size: 24px; line-height: 1.2858342857; margin: 10px 0">premier partners including PayPal, Amazon, Walmart, J.P. Morgan and many more</p>
+            </div>
+            <div class="flex-item" style="border-radius: 23px; box-shadow: rgba(0, 0, 0, 0.09) 2px 4px 12px 0px; background: rgba(0,0,0,0.03)">
+                <h2 class="font-sans"  style="font-size: 80px; font-weight: bold; color: #a467c6">450+</h2>
+                <p class="text-grey font-sans" style="font-weight: 600; font-size: 24px; line-height: 1.2858342857; margin: 10px 0">million transactions processed in 2023</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="grid flex-left-center position-relative" style="min-height: 100vh; background: black; padding: 20vmin">
+        <h1 class="text-grey headline-2">How Leading <span style="color: #a467c6;">Utilities</span><br> Are <span style="color: #05b487">Succeeding</span> With<br> <span style="color: #2364F6">Paymentus</span></h1>
+    </div>
+
+    <div class="grid-2">
+        <div class="flex-item flex-left-center card" style="background: rgba(0,0,0,0.03); margin: 20px; box-shadow: rgba(0, 0, 0, 0.09) 2px 4px 12px 0px">
+            <h1 class="headline-2" style="font-size: 10vw; color: #a467c6;">67%</h1>
+            <h1 class="headline-2">Increase in<br> AutoPay Adoption</h1>
+        </div>
+        <div class="flex-item flex-left-center">
+            <p class="text-grey font-sans" style="font-weight: 600; font-size: 34px; line-height: 1.2858342857; margin: 30px 0 20px"><span style="color: #2364F6">Since partnering with Paymentus</span>, a Florida utility exceeded its goals by driving a 69% increase in electronic billing subscription rate, highlighted by a 67% increase in scheduled payments.</p>
+            <a href="https://www.paymentus.com/industry-insights/reducing-costs-with-advanced-payments-and-a-67-increase-in-scheduled-payments/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="#2364F6" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
+                  </svg>
+            </a>
+        </div>
+    </div>
+    <div class="grid-2" style="background: rgba(0,0,0,0.03);">
+        <div class="flex-item flex-left-center card" style="margin: 20px; box-shadow: rgba(0, 0, 0, 0.09) 2px 4px 12px 0px">
+            <h1 class="headline-2" style="font-size: 10vw; color: #a467c6;">80%</h1>
+            <h1 class="headline-2">Increase in Self-Service Payments Adoptions</h1>
+        </div>
+        <div class="flex-item flex-left-center">
+            <p class="text-grey font-sans" style="font-weight: 600; font-size: 34px; line-height: 1.2858342857; margin: 30px 0">With resources at a premium, <span style="color: #2364F6">learn how Paymentus helped one utility</span> drive an 80% increase in cost-efficient, self-serve digital payment methods.</p>
+            <a href="https://www.paymentus.com/industry-insights/case-study-cobb-county/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="#2364F6" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="grid-2">
+        <div class="flex-item flex-left-center card" style="background: rgba(0,0,0,0.03); margin: 20px; box-shadow: rgba(0, 0, 0, 0.09) 2px 4px 12px 0px">
+            <h1 class="headline-2" style="font-size: 10vw; color: #a467c6;">260</h1>
+            <h1 class="headline-2" style="margin-bottom: 20px">Hours Saved On Customer Calls</h1>
+        </div>
+        <div class="flex-item flex-left-center">
+            <p class="text-grey font-sans" style="font-weight: 600; font-size: 34px; line-height: 1.2858342857; margin: 30px 0">See how in just seven months, <span style="color: #2364F6">Paymentus helped a leading utility</span> drive nearly 25,000 chatbot conversations – saving its team an estimated 260 hours annually on fielding customer calls.</p>
+            <a href="https://www.paymentus.com/industry-insights/adding-a-new-level-of-24-7-service-with-chatbot/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="#2364F6" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="grid position-relative flex-left-center" style="min-height: 100vh; background: black; padding: 20vmin">
+        <p class="text-grey font-sans text-primary" style="font-weight: 600; font-size: 28px; line-height: 1.2858342857; margin: 20px 0">Since partnering with Paymentus, a Florida utility exceeded its goals by driving a 69% increase in electronic billing subscription rate, highlighted by a 67% increase in scheduled payments.</p>
+        <h5 class="text-grey font-sans">– Jef Gray, Vice President of Information Technology, Kissimmee Utility Authority</h5>
+    </div>
+
+    <div class="flex-container position-relative" style="min-height: 100vh;">
+        <div class="flex-item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h4 class="text-grey" data-aos="fade-up">THE BEST-IN-CLASS EBPP SOLUTION</h4>
+            <div style="padding: 0 5vmin;">
+                <h1 class="headline-1" data-aos="fade-up" data-aos-delay="200">Ready to <span style="color: #a467c6;">Make the Move?</span></h1>
+                <h3 class="text-grey" style="font-weight: light; text-transform: uppercase; margin: 20px 0; padding: 0 10vw;" data-aos="fade-up" data-aos-delay="400">Schedule a demo with a Paymentus expert to see how the top-rated, holistic Paymentus billing and payment solution is the best choice to future-proof your billing and payments at a reduced cost to serve. </h3>
+                <button style="margin-top: 15px" class="btn btn-dark" data-aos="fade-up" data-aos-delay="600">Schedule a Demo</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</Layout>
+
