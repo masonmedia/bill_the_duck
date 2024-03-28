@@ -101,8 +101,8 @@ import data from '../data/bill.json';
     background: linear-gradient(#061E51, #061E51) padding-box, linear-gradient(105deg, #7B53F5 0%, #2364F6 25%, #56C3FF 50%, #AA206D 75%) border-box;
     background: linear-gradient(#061E51, #061E51) padding-box, linear-gradient(105deg, #56c3ff 0%, #317ef8 25%, #56C3FF 50%, #525af5 75%) border-box;
     border: 1px solid transparent; 
-    border: 2px solid transparent; 
 }
+
   .card {
     filter: drop-shadow(3px 5px 7px #000); 
     border-radius: 23px;
@@ -123,12 +123,16 @@ import data from '../data/bill.json';
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(#061E51, #061E51) padding-box, linear-gradient(105deg, #56c3ff 0%, #317ef8 25%, #56C3FF 50%, #525af5 75%) border-box;
+    border: 1.5px solid transparent; 
 }
  
 .tab {
   width: 100%;
+  height: auto;
   color: white;
-  overflow-x: hidden;
+  overflow: hidden;
+  
 }
 .tab-label {
   display: -webkit-box;
@@ -136,13 +140,12 @@ import data from '../data/bill.json';
   -webkit-box-pack: justify;
           justify-content: space-between;
   padding: 1em;
-  /* background: #2c3e50; */
+  font-size: 23px;
   background: #061E51;
-  font-weight: bold;
+  font-weight: light;
   cursor: pointer;
   background: linear-gradient(#061E51, #061E51) padding-box, linear-gradient(105deg, #56c3ff 0%, #317ef8 25%, #56C3FF 50%, #525af5 75%) border-box;
     border: 1px solid transparent; 
-  /* Icon */
 }
 .tab-label:hover {
   /* background: #1a252f; */
@@ -163,30 +166,36 @@ import data from '../data/bill.json';
   padding: 0 1em;
   color: #fff;
   background: #061E51;
-  background: linear-gradient(#061E51, #061E51) padding-box, linear-gradient(105deg, #56c3ff 0%, #317ef8 25%, #56C3FF 50%, #525af5 75%) border-box;
-    border-left: 1px solid transparent; 
-    border-right: 1px solid transparent; 
   -webkit-transition: all .35s;
   transition: all .35s;
+  overflow-x: hidden;
 }
 
 #rdo1:checked + .tab-label,
-#rdo2:checked + .tab-label {
+#rdo2:checked + .tab-label,
+#rdo3:checked + .tab-label,
+#rdo4:checked + .tab-label {
   /* background: #1a252f; */
 }
 #rdo1:checked + .tab-label::after,
-#rdo2:checked + .tab-label::after {
+#rdo2:checked + .tab-label::after,
+#rdo3:checked + .tab-label::after,
+#rdo4:checked + .tab-label::after {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 #rdo1:checked ~ .tab-content,
-#rdo2:checked ~ .tab-content {
+#rdo2:checked ~ .tab-content,
+#rdo3:checked ~ .tab-content,
+#rdo4:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
 }
 
 #rdo1 ,
-#rdo2 {
+#rdo2,
+#rdo3,
+#rdo4 {
   position: absolute;
   opacity: 0;
   z-index: -1;
@@ -263,31 +272,28 @@ import data from '../data/bill.json';
         </div>
     </div>
 
-    <div class="grid-2">
-        <div class="flex-left-center" style="color: #fff; padding: 30px;">
-            <h4 style="margin-bottom: 15px; color: lightgrey;">PAYMENTUS CHATBOT</h4>
-            <h1 style="font-size: 8vmin; font-weight: bold; line-height: 90%; padding-bottom: 20px;">ANSWERS 24/7</h1>
-            <p>The Paymentus Chatbot instantly connects customers to the help they need. Leveraging AI and Machine Learning, our conversational chatbot lets customers resolve questions, receive account balances, make and schedule payments, and contact live help.</p>
-            <p>We offer full troubleshooting support while shielding clients and their employees from sensitive cardholder information during the payment process.</p>
-            <button class="btn btn-gradient">Watch now</button>
-        </div>
-        <div class="min-vh-500">
-            <img class="body-img" src="/img/backgrounds/flat_phone_crop.png" alt="">
-        </div>
-    </div>
-
     <div class="grid-1 container border-gradient rounded" style="padding: 30px">
         <h1 style="font-size: 8vmin; font-weight: bold; line-height: 90%; padding-bottom: 20px; text-align: center">THE COMPLETE BILLING & PAYMENT SOLUTION FROM PAYMENTUS</h1>
         <div class="tabs">
             <div class="tab">
                <input type="checkbox" id="rdo1" checked>
-               <label class="tab-label" for="rdo1">Heading Text</label>
+               <label class="tab-label" for="rdo1">INCLUSIVE PAYMENT METHODS</label>
                <div class="tab-content">
                 <div class="grid-2">
                     <div class="flex-left-center" style="color: #fff; padding: 30px;">
                         <h4 style="margin-bottom: 15px; color: lightgrey;">PAYMENTUS CHATBOT</h4>
-                        <h1 style="font-size: 8vmin; font-weight: bold; line-height: 90%; padding-bottom: 20px;">MORE INCLUSIVE PAYMENT METHODS</h1>
-                        <p>Put in-person cash, major credit and debit cards, popular digital wallets and more at the fingertips of your customers – all without Put in-person cash, major credit and debit cards, popular digital the need for added gateways and vendors</p>
+                        <h1 class="slide-in" style="font-size: 8vmin; font-weight: bold; line-height: 90%; padding-bottom: 20px;">MORE INCLUSIVE PAYMENT METHODS</h1>
+                        <p class="slide-in">Put in-person cash, major credit and debit cards, popular digital wallets and more at the fingertips of your customers – all without the need for added gateways and vendors.</p>
+                        <div style="display: flex;">
+                            <div class="">
+                                <h3>TRADITIONAL PAYMENT METHODS</h3>
+                                <img style="width: 200px; padding: 20px 0;" src="/img/backgrounds/payments1.svg" alt="">
+                            </div>
+                            <div class="">
+                                <h3>TRADITIONAL PAYMENT METHODS</h3>
+                                <img style="width: 200px; padding: 20px 0;" src="/img/backgrounds/payments2.svg" alt="">
+                            </div>
+                        </div>
                     </div>
                     <div class="min-vh-500">
                         <img class="body-img" src="/img/backgrounds/flat_phone_crop.png" alt="">
@@ -297,11 +303,50 @@ import data from '../data/bill.json';
             </div>
             <div class="tab">
                <input type="checkbox" id="rdo2">
-               <label class="tab-label" for="rdo2">Heading Text</label>
+               <label class="tab-label" for="rdo2">PAYMENT AND COMMUNICATION CHANNELS</label>
                <div class="tab-content">
-                  Your accordion contents 
+                <div class="grid-1">
+                    <div class="flex-left-center position-relative" style="color: #fff; padding: 30px;">
+                        <h4 style="margin-bottom: 15px; color: lightgrey;">PAYMENTUS CHATBOT</h4>
+                        <h1 style="font-size: 8vmin; font-weight: bold; line-height: 90%; padding-bottom: 20px;">MORE PAYMENT AND COMMUNICATION CHANNELS</h1>
+                        <p>Whether they prefer to text, to call, to visit you in person or self-serve on nights and weekends, your customers will enjoy the widest range of ways to view, manage and pay their bills.</p>
+                        <img class="body-img" src="/img/backgrounds/solution_flat.png" alt="">
+                    </div>
+                </div>
                </div>
             </div>
+            <div class="tab">
+               <input type="checkbox" id="rdo3">
+               <label class="tab-label" for="rdo3">BUSINESS INTELLIGENCE & ANALYTICS</label>
+               <div class="tab-content">
+                <div class="grid-2">
+                    <div class="flex-left-center" style="color: #fff; padding: 30px;">
+                        <h4 style="margin-bottom: 15px; color: lightgrey;" data-aos="fade-up">PAYMENTUS CHATBOT</h4>
+                        <h1 style="font-size: 8vmin; font-weight: bold; line-height: 90%; padding-bottom: 20px;" data-aos="fade-up" data-aos-delay="200">MORE BUSINESS INTELLIGENCE & ANALYTICS</h1>
+                        <p>Gain real-time reporting and reconciliation on every transaction – regardless of payment type or channel – to optimize back-office processes and accelerate decision-making.</p>
+                    </div>
+                    <div class="min-vh-500" style="margin-left: auto; width: 80%">
+                        <img class="body-img" src="/img/backgrounds/laptop_flat.png" alt="" data-aos="fade-up" data-aos-delay="400">
+                    </div>
+                </div>
+               </div>
+            </div>
+            <div class="tab">
+                <input type="checkbox" id="rdo4">
+                <label class="tab-label" for="rdo4">MODERNIZED BILL PRESENTMENT</label>
+                <div class="tab-content">
+                 <div class="grid-2">
+                    <div class="min-vh-500 flex-left-center">
+                        <img class="body-img" src="https://astroship-pro.web3templates.com/_astro/hero-screenshot.HaV5_ts2_ZE0EX9.avif" alt="" data-aos="fade-up" data-aos-delay="400">
+                    </div>
+                     <div class="flex-left-center" style="color: #fff; padding: 30px;">
+                         <h4 style="margin-bottom: 15px; color: lightgrey;" data-aos="fade-up">PAYMENTUS CHATBOT</h4>
+                         <h1 style="font-size: 8vmin; font-weight: bold; line-height: 90%; padding-bottom: 20px;" data-aos="fade-up" data-aos-delay="200">MODERNIZED BILL PRESENTMENT & DELIVERY</h1>
+                         <p>Save on bill print by accelerating the adoption with fast, secure eBills delivered to customers by text and email. We can even remove the need for a bill print vendor by printing and mailing statements for you.</p>
+                     </div>
+                 </div>
+                </div>
+             </div>
          </div>
     </div>
 
