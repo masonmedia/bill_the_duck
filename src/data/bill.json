@@ -78,8 +78,10 @@
             "button": "Watch now"
         },
         "contest": {
+            "contest_winners_title": "Congratulations to our Billebration Photo Contest Winners!",
             "title": "Billebration Photo Contest",
-            "content": "If there’s one thing Bill loves it’s taking pictures with his fans (he is on <a class='fw-bold text-green' href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram</a> and an influencer, after all). And now, those photos could win you some great prizes! Send us your photos with Bill and we’ll award our favorites in the following categories: Most Creative, Most Exotic Location, Funniest, Cutest, Most Pet-Friendly, Best Group/Team.<br><br> The contest runs until April 30, 2024. You can enter multiple photos, so send them in! You can also request a special 20th anniversary duck with each submission.",
+            "contentOLD": "If there’s one thing Bill loves it’s taking pictures with his fans (he is on <a class='fw-bold text-green' href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram</a> and an influencer, after all). And now, those photos could win you some great prizes! Send us your photos with Bill and we’ll award our favorites in the following categories: Most Creative, Most Exotic Location, Funniest, Cutest, Most Pet-Friendly, Best Group/Team.<br><br> The contest runs until April 30, 2024. You can enter multiple photos, so send them in! You can also request a special 20th anniversary duck with each submission.",
+            "content": "Thank you to everyone who participated and congratulations to our winners! Keep up with the photo fun and excitement of Billebration by following Bill’s adventures on <a class='fw-bold text-green' href='https://www.instagram.com/paymentuscorporation/' target='_blank'>Instagram</a>. We’ll share Bill’s latest travels, celebrate special holidays, and provide billing and payment insights to continue to help you Bill Better®",
             "button": "Enter Now"
         },
         
